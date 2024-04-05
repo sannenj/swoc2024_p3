@@ -5,6 +5,9 @@ import player_pb2
 import player_pb2_grpc
 
 playerIdentifier = ""
+myName = "Kølin"
+berserkerBaseName="Bersærker"
+warriorNumber = 0
 
 class OccupiedCells:
     Cells = []
@@ -63,6 +66,7 @@ class GameState:
     Cells = []
     Dimensions = []
     Snakes = []
+    OccupiedCells = OccupiedCells()
 
     def __init__(self, dims, startAddress, playerName):
         self.Snakes.append(Snake(address=startAddress, name=playerName))
@@ -104,13 +108,13 @@ class GameState:
             cell.HasPlayer = len(updatedCell.player) > 0
 
             # Ignore Bob as that is Mathijs (host)
-            if cell.HasPlayer and updatedCell.player != "bob":
+            if cell.HasPlayer and updatedCell.player != "bob" and updatedCell.player != myName:
                 occupiedCells.addCell(OccupiedCell(address=updatedCell.address, player=updatedCell.player))
             else:
                 occupiedCells.removeCell(address=updatedCell.address)
                 # Length of the snake is the time it spends in the list
 
-    def getNextAddress(self, address):
+    def getNextAddressRandom(self, address):
         while True:
             newaddr = np.copy(address)
             dim = np.random.randint(len(self.Dimensions))
@@ -123,11 +127,35 @@ class GameState:
                 cell = self.getCell(newaddr)
                 if cell.HasPlayer == False:
                     return newaddr
+    
+    def getNextAddressKamikazeMode(self, address):
+        sortedCells = sorted(self.OccupiedCells.Cells, key=lambda x: np.linalg.norm(x.Address - address))
+
+        closestPlayer = sortedCells[0]
+
+        # find direction to move to get closer to the closest player
+        direction = np.array(closestPlayer.Address) - np.array(address)
+        # pick one random direction to move in
+        dim = -1
+        for i in range(len(direction)):
+            if direction[i] != 0:
+                dim = i
+        # Copy the old address and change the selected direction
+        newAddress = np.copy(address)
+        if(direction[dim] > 0):
+            newAddress[dim] += 1
+        else:
+            newAddress[dim] -= 1
+
+        return newAddress
 
     def getMoves(self):
         moves = []
         for snake in self.Snakes:
-            nextLocation = self.getNextAddress(snake.Head)
+            if (len(self.OccupiedCells.Cells) > 1):
+                nextLocation = self.getNextAddressKamikazeMode(snake.Head)
+            else:
+                nextLocation = self.getNextAddressRandom(snake.Head)
             snake.Head = nextLocation
             cell = self.getCell(nextLocation)
             snake.Segments.append(nextLocation)
@@ -184,11 +212,11 @@ def Register(playerName):
         playerIdentifier = registerResponse.playerIdentifier
         return gameState
 
-async def Subscribe(gameState, occupiedCells) -> None:
+async def Subscribe(gameState) -> None:
         with grpc.insecure_channel("192.168.178.62:5168") as channel:
             stub = player_pb2_grpc.PlayerHostStub(channel)
             for thing in stub.Subscribe(player_pb2.SubsribeRequest(playerIdentifier=playerIdentifier)):
-                gameState.update(gameUpdate=thing, occupiedCells=occupiedCells)
+                gameState.update(gameUpdate=thing, occupiedCells=gameState.OccupiedCells)
                 for split in gameState.getSplits():
                     stub.SplitSnake(split)
                 for move in gameState.getMoves():
@@ -197,15 +225,14 @@ async def Subscribe(gameState, occupiedCells) -> None:
 
                 # loop over snakes and log them
                 print("Occupied:")
-                for cell in occupiedCells.Cells:
+                for cell in gameState.OccupiedCells.Cells:
                     print(f"{cell.Player} found at {cell.Address}")
                 print(" ")
 
 async def main():
     #asyncio.create_task(ListenToServerEvents())
-    gameState = Register("Kølin")
-    occupiedCells = OccupiedCells()
-    asyncio.create_task(Subscribe(gameState, occupiedCells))
+    gameState = Register(myName)
+    asyncio.create_task(Subscribe(gameState))
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
