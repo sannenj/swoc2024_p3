@@ -6,6 +6,37 @@ import player_pb2_grpc
 
 playerIdentifier = ""
 
+class OccupiedCells:
+    Cells = []
+
+    def addCell(self, occupiedCell):
+        self.Cells.append(occupiedCell)
+
+    def removeCell(self, address):
+        foundCell = self.findCell(address)
+        if(foundCell != None):
+            self.Cells.remove(foundCell)
+    
+    def findCell(self, address):
+        for cell in self.Cells:
+            if self.sameAddress(cell.Address, address):
+                return cell
+        return None
+    
+    def sameAddress(self, address1, address2):
+        for i in range(len(address1)):
+            if address1[i] != address2[i]:
+                return False
+        return True
+
+class OccupiedCell:
+    Address = []
+    Player = ""
+
+    def __init__(self, address, player):
+        self.Address = address
+        self.Player = player
+
 class Snake:
     Head = []
     Segments = [[]]
@@ -66,11 +97,18 @@ class GameState:
             self.Cells[tuple(address)] = cell
         return cell
 
-    def update(self, gameUpdate):
+    def update(self, gameUpdate, occupiedCells):
         for updatedCell in gameUpdate.updatedCells:
             cell = self.getCell(updatedCell.address)
             cell.HasFood = updatedCell.foodValue > 0
             cell.HasPlayer = len(updatedCell.player) > 0
+
+            # Ignore Bob as that is Mathijs (host)
+            if cell.HasPlayer and updatedCell.player != "bob":
+                occupiedCells.addCell(OccupiedCell(address=updatedCell.address, player=updatedCell.player))
+            else:
+                occupiedCells.removeCell(address=updatedCell.address)
+                # Length of the snake is the time it spends in the list
 
     def getNextAddress(self, address):
         while True:
@@ -146,23 +184,28 @@ def Register(playerName):
         playerIdentifier = registerResponse.playerIdentifier
         return gameState
 
-async def Subscribe(gameState) -> None:
+async def Subscribe(gameState, occupiedCells) -> None:
         with grpc.insecure_channel("192.168.178.62:5168") as channel:
             stub = player_pb2_grpc.PlayerHostStub(channel)
             for thing in stub.Subscribe(player_pb2.SubsribeRequest(playerIdentifier=playerIdentifier)):
-                gameState.update(gameUpdate=thing)
+                gameState.update(gameUpdate=thing, occupiedCells=occupiedCells)
                 for split in gameState.getSplits():
                     stub.SplitSnake(split)
                 for move in gameState.getMoves():
                     print(move.snakeName + ": " + str(move.nextLocation))
                     stub.MakeMove(move)
 
+                # loop over snakes and log them
+                print("Occupied:")
+                for cell in occupiedCells.Cells:
+                    print(f"{cell.Player} found at {cell.Address}")
+                print(" ")
+
 async def main():
     #asyncio.create_task(ListenToServerEvents())
     gameState = Register("Kølin")
-    asyncio.create_task(Subscribe(gameState))
-
-
+    occupiedCells = OccupiedCells()
+    asyncio.create_task(Subscribe(gameState, occupiedCells))
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
