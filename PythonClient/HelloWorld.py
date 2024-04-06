@@ -12,6 +12,11 @@ foodPlaceholder = "ßßßßß"
 
 class OccupiedCells:
     Cells = []
+    Type = ""
+
+    def __init__(self, type):
+        self.Type = type
+        self.Cells = []
 
     def addCell(self, occupiedCell):
         self.Cells.append(occupiedCell)
@@ -73,14 +78,16 @@ class GameState:
     Cells = []
     Dimensions = []
     Snakes = []
-    PlayerCells = OccupiedCells()
-    FoodCells = OccupiedCells()
+    PlayerCells: OccupiedCells
+    FoodCells: OccupiedCells
 
     def __init__(self, dims, startAddress, playerName, allCells):
         self.Snakes.append(Snake(address=startAddress, name=playerName))
         self.Dimensions = dims
         totalCells = np.prod(dims)
         self.Cells = np.array([None]*totalCells).reshape(dims)
+        self.FoodCells = OccupiedCells("Food")
+        self.PlayerCells = OccupiedCells("Players")
         self.addFoodCells(allCells)
 
     def addFoodCells(self, foodCells):
@@ -149,20 +156,20 @@ class GameState:
                     return newaddr
     
     def getNextAddressKamikazeMode(self, address):
-        sortedCells = sorted(self.PlayerCells.Cells, key=lambda x: np.linalg.norm(x.Address - address))
+        sortedCells = sorted(self.PlayerCells.Cells, key=lambda x: np.linalg.norm(np.array(x.Address) - np.array(address)))
 
         closestPlayer = sortedCells[0]
 
         # find direction to move to get closer to the closest player
-        direction = np.array(closestPlayer.Address) - np.array(address)
+        diff = np.array(closestPlayer.Address) - np.array(address)
         # pick one random direction to move in
         dim = -1
-        for i in range(len(direction)):
-            if direction[i] != 0:
+        for i in range(len(diff)):
+            if diff[i] != 0:
                 dim = i
         # Copy the old address and change the selected direction
         newAddress = np.copy(address)
-        if(direction[dim] > 0):
+        if(diff[dim] > 0):
             newAddress[dim] += 1
         else:
             newAddress[dim] -= 1
@@ -172,9 +179,9 @@ class GameState:
     def getMoves(self):
         moves = []
         for snake in self.Snakes:
-            if (len(self.PlayerCells.Cells) > 1):
+            if (snake.Name is not myName and len(self.PlayerCells.Cells) > 1):
                 nextLocation = self.getNextAddressKamikazeMode(snake.Head)
-            if (len(self.FoodCells.Cells) > 1):
+            if (snake.Name is myName and len(self.FoodCells.Cells) > 1):
                 # TODO: Implement food seeking mode
                 nextLocation = self.getNextAddressRandom(snake.Head)
             else:
@@ -192,7 +199,7 @@ class GameState:
     def getSplits(self):
         splits = []
         for snake in self.Snakes:
-            if snake.Length > 2 and len(self.Snakes) < 11:
+            if snake.Length > 1 and len(self.Snakes) < 11:
                 print("old snake:")
                 for segment in snake.Segments:
                     print(segment)
@@ -205,9 +212,11 @@ class GameState:
                 snake.Segments = snake.Segments[1:]
                 print("new head:")
                 print(newHead)
-                newSnake = Snake(address=newHead, name=snake.Name + "." + str(snake.KidCount)) 
+                global numberOfBerserkers
+                numberOfBerserkers += 1
+                newSnake = Snake(address=newHead, name=f"{berserkerBaseName}-{numberOfBerserkers}") 
                 self.Snakes.append(newSnake)
-                address = self.getNextAddress(newHead)
+                address = self.getNextAddressKamikazeMode(newHead)
                 newSnake.Head = address
                 print("new head:")
                 print(newSnake.Head)
@@ -275,18 +284,25 @@ async def Subscribe(gameState) -> None:
                 # loop over snakes and log them
                 print("Occupied:")
                 for cell in gameState.PlayerCells.Cells:
-                    print(f"{cell.Player} found at {cell.Address}")
+                    print(f"{cell.Content} found at {cell.Address}")
                 print(" ")
+
+                if (len(gameState.Snakes) == 0):
+                    print("Game over")
+                    print("")
 
 async def main():
     #asyncio.create_task(ListenToServerEvents())
     allCells = GetAllCells()
-    gameState = Register(myName, allCells)
+    global numberOfBerserkers
+    gameState = Register(f"{myName}", allCells)
     print("")
     print("Food Cells:")
+    print(gameState.FoodCells.Type)
     print(gameState.FoodCells.Cells)
     print("")
     print("Player Cells:")
+    print(gameState.PlayerCells.Type)
     print(gameState.PlayerCells.Cells)
 
     asyncio.create_task(Subscribe(gameState))
