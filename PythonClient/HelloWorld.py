@@ -157,32 +157,40 @@ class GameState:
         print(gameUpdate.removedSnakes)
         toBeRemoved = []
         for removedSnake in gameUpdate.removedSnakes:
-            # Removed due to saving or illegal move
-            if(len(removedSnake) == 1):
-                print("Removed snake 1: " + removedSnake)
-                toBeRemoved.append(removedSnake.split(':')[1])
+            playerName = removedSnake.split(':')[0]
+            snakeName = removedSnake.split(':')[1]
+            if(playerName == myName):
+                toBeRemoved.append(snakeName)
+        # for removedSnake in gameUpdate.removedSnakes:
+        #     # Removed due to saving or illegal move
+        #     if(len(removedSnake) == 1):
+        #         print("Removed snake 1: " + removedSnake)
+        #         toBeRemoved.append(removedSnake.split(':')[1])
 
-            # Removed due to collision
-            if(len(removedSnake) == 2):
-                print(f"Removed snake 1: {removedSnake[0]}")
-                print(f"Removed snake 2: {removedSnake[1]}")
-                if(removedSnake[0].split(':')[0] == myName or removedSnake[1].split(':')[0] == myName):
-                    for snake in self.Snakes:
-                        if snake.Name == removedSnake[0].split(':')[1]:
-                            toBeRemoved.append(removedSnake[0].split(':')[1])
-                        elif snake.Name == removedSnake[1].split(':')[1]:
-                            toBeRemoved.append(removedSnake[1].split(':')[1])
+        #     # Removed due to collision
+        #     if(len(removedSnake) == 2):
+        #         print(f"Removed snake 1: {removedSnake[0]}")
+        #         toBeRemoved.append(removedSnake[0].split(':')[1])
+        #         print(f"Removed snake 2: {removedSnake[1]}")
+        #         toBeRemoved.append(removedSnake[1].split(':')[1])
 
+        mySnakeNames = []
         for snake in self.Snakes:
-            if(snake.Name in toBeRemoved):
-                print(f"Remove: {snake.Name}")
-                self.Snakes.remove(snake)
+            mySnakeNames.append(snake.Name)
 
-                global mothershipName
-                if(snake.Name == mothershipName):
-                    print("")
-                    print("New Mothership selected")
-                    mothershipName = self.Snakes[0].Name
+        for snakeName in toBeRemoved:
+            print(f"Remove: {snakeName}")
+            if(snakeName in mySnakeNames):
+                # Remove my snake based on name
+                for snake in self.Snakes:
+                    if(snake.Name == snakeName):
+                        self.Snakes.remove(snake)
+
+            global mothershipName
+            if(snakeName is mothershipName):
+                print("")
+                print("New Mothership selected")
+                mothershipName = self.Snakes[0].Name
 
     def getNextAddressRandom(self, address):
         while True:
