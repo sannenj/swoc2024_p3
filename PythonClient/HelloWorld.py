@@ -6,8 +6,9 @@ import player_pb2_grpc
 
 playerIdentifier = ""
 myName = "Kølin"
-berserkerBaseName="Bersærker"
-warriorNumber = 0
+berserkerBaseName ="Bersærker"
+numberOfBerserkers = 0
+foodPlaceholder = "ßßßßß"
 
 class OccupiedCells:
     Cells = []
@@ -34,11 +35,17 @@ class OccupiedCells:
 
 class OccupiedCell:
     Address = []
-    Player = ""
+    Content = ""
 
-    def __init__(self, address, player):
+    def __init__(self, address, content):
         self.Address = address
-        self.Player = player
+        self.Content = content
+
+    def __str__(self):
+        return f"Address: {self.Address}, Content: {self.Content}"
+    
+    def __repr__(self):
+        return self.__str__()
 
 class Snake:
     Head = []
@@ -52,7 +59,7 @@ class Snake:
         self.Head = address
         self.Segments.append(address)
         self.Name = name
-        print("snake is finished: " + name);
+        print("snake is created: " + name);
 
 class Cell:
      Address = []
@@ -66,13 +73,23 @@ class GameState:
     Cells = []
     Dimensions = []
     Snakes = []
-    OccupiedCells = OccupiedCells()
+    PlayerCells = OccupiedCells()
+    FoodCells = OccupiedCells()
 
-    def __init__(self, dims, startAddress, playerName):
+    def __init__(self, dims, startAddress, playerName, allCells):
         self.Snakes.append(Snake(address=startAddress, name=playerName))
         self.Dimensions = dims
         totalCells = np.prod(dims)
         self.Cells = np.array([None]*totalCells).reshape(dims)
+        self.addFoodCells(allCells)
+
+    def addFoodCells(self, foodCells):
+        for foodCell in foodCells:
+            cell = self.getCell(foodCell.address)
+            cell.HasFood = foodCell.foodValue > 0
+
+            if cell.HasFood:
+                self.FoodCells.addCell(OccupiedCell(address=foodCell.address, content=foodPlaceholder))
     
     def checkBounds(self, lst, indices):
         if indices.any():
@@ -101,18 +118,21 @@ class GameState:
             self.Cells[tuple(address)] = cell
         return cell
 
-    def update(self, gameUpdate, occupiedCells):
+    def update(self, gameUpdate):
         for updatedCell in gameUpdate.updatedCells:
             cell = self.getCell(updatedCell.address)
-            cell.HasFood = updatedCell.foodValue > 0
             cell.HasPlayer = len(updatedCell.player) > 0
 
             # Ignore Bob as that is Mathijs (host)
             if cell.HasPlayer and updatedCell.player != "bob" and updatedCell.player != myName:
-                occupiedCells.addCell(OccupiedCell(address=updatedCell.address, player=updatedCell.player))
+                self.PlayerCells.addCell(OccupiedCell(address=updatedCell.address, content=updatedCell.player))
             else:
-                occupiedCells.removeCell(address=updatedCell.address)
+                self.PlayerCells.removeCell(address=updatedCell.address)
                 # Length of the snake is the time it spends in the list
+
+            # Remove the food cell if it has been eaten
+            if cell.HasPlayer:
+                self.FoodCells.removeCell(address=updatedCell.address)
 
     def getNextAddressRandom(self, address):
         while True:
@@ -129,7 +149,7 @@ class GameState:
                     return newaddr
     
     def getNextAddressKamikazeMode(self, address):
-        sortedCells = sorted(self.OccupiedCells.Cells, key=lambda x: np.linalg.norm(x.Address - address))
+        sortedCells = sorted(self.PlayerCells.Cells, key=lambda x: np.linalg.norm(x.Address - address))
 
         closestPlayer = sortedCells[0]
 
@@ -152,8 +172,11 @@ class GameState:
     def getMoves(self):
         moves = []
         for snake in self.Snakes:
-            if (len(self.OccupiedCells.Cells) > 1):
+            if (len(self.PlayerCells.Cells) > 1):
                 nextLocation = self.getNextAddressKamikazeMode(snake.Head)
+            if (len(self.FoodCells.Cells) > 1):
+                # TODO: Implement food seeking mode
+                nextLocation = self.getNextAddressRandom(snake.Head)
             else:
                 nextLocation = self.getNextAddressRandom(snake.Head)
             snake.Head = nextLocation
@@ -203,20 +226,46 @@ async def ListenToServerEvents() -> None:
             for thing in stub.SubscribeToServerEvents(player_pb2.EmptyRequest()):
                 print(thing)
 
-def Register(playerName):
+def Register(playerName, allCells):
     with grpc.insecure_channel("192.168.178.62:5168") as channel:
         stub = player_pb2_grpc.PlayerHostStub(channel)
         registerResponse = stub.Register(player_pb2.RegisterRequest(playerName=playerName))
+
+        print("Register response:")
+        print(registerResponse)
+
         global playerIdentifier
-        gameState = GameState(registerResponse.dimensions, registerResponse.startAddress, playerName)
+        gameState = GameState(registerResponse.dimensions, registerResponse.startAddress, playerName, allCells)
+
         playerIdentifier = registerResponse.playerIdentifier
+
         return gameState
+    
+def GetAllCells():
+    with grpc.insecure_channel("192.168.178.62:5168") as channel:
+        stub = player_pb2_grpc.PlayerHostStub(channel)
+        gameStateResponse = stub.GetGameState(player_pb2.EmptyRequest())
+
+        print("Game state response:")
+        print(gameStateResponse)
+
+        updatedCells = []
+        for thing in gameStateResponse.updatedCells:
+            updatedCells.append(thing)
+
+        # print("Updated cells:")
+        # print(updatedCells)
+
+        return updatedCells
 
 async def Subscribe(gameState) -> None:
         with grpc.insecure_channel("192.168.178.62:5168") as channel:
             stub = player_pb2_grpc.PlayerHostStub(channel)
-            for thing in stub.Subscribe(player_pb2.SubsribeRequest(playerIdentifier=playerIdentifier)):
-                gameState.update(gameUpdate=thing, occupiedCells=gameState.OccupiedCells)
+            subscribeResponse = stub.Subscribe(player_pb2.SubsribeRequest(playerIdentifier=playerIdentifier))
+            #print("Subscribe response:")
+            #print(subscribeResponse)
+            for thing in subscribeResponse:
+                gameState.update(gameUpdate=thing)
                 for split in gameState.getSplits():
                     stub.SplitSnake(split)
                 for move in gameState.getMoves():
@@ -225,13 +274,21 @@ async def Subscribe(gameState) -> None:
 
                 # loop over snakes and log them
                 print("Occupied:")
-                for cell in gameState.OccupiedCells.Cells:
+                for cell in gameState.PlayerCells.Cells:
                     print(f"{cell.Player} found at {cell.Address}")
                 print(" ")
 
 async def main():
     #asyncio.create_task(ListenToServerEvents())
-    gameState = Register(myName)
+    allCells = GetAllCells()
+    gameState = Register(myName, allCells)
+    print("")
+    print("Food Cells:")
+    print(gameState.FoodCells.Cells)
+    print("")
+    print("Player Cells:")
+    print(gameState.PlayerCells.Cells)
+
     asyncio.create_task(Subscribe(gameState))
 
 if __name__ == "__main__":

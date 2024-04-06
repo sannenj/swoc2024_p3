@@ -1,0 +1,2892 @@
+Game state response:
+updatedCells {
+  address: 0
+  address: 0
+  address: 19
+  address: 0
+  player: "BlackAdder"
+}
+updatedCells {
+  address: 0
+  address: 2
+  address: 13
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 3
+  address: 1
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 5
+  address: 0
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 8
+  address: 10
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 8
+  address: 14
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 9
+  address: 9
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 10
+  address: 1
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 11
+  address: 8
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 11
+  address: 9
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 12
+  address: 6
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 14
+  address: 5
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 14
+  address: 18
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 15
+  address: 7
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 16
+  address: 18
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 17
+  address: 12
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 17
+  address: 13
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 18
+  address: 0
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 18
+  address: 4
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 18
+  address: 19
+  address: 4
+  player: "BlackAdder"
+}
+updatedCells {
+  address: 0
+  address: 19
+  address: 0
+  address: 0
+  player: "BlackAdder"
+}
+updatedCells {
+  address: 0
+  address: 19
+  address: 0
+  address: 4
+  player: "BlackAdder"
+}
+updatedCells {
+  address: 0
+  address: 19
+  address: 3
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 19
+  address: 16
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 0
+  address: 19
+  address: 19
+  address: 0
+  player: "BlackAdder"
+}
+updatedCells {
+  address: 1
+  address: 1
+  address: 7
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 4
+  address: 4
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 5
+  address: 16
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 8
+  address: 10
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 8
+  address: 12
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 8
+  address: 16
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 9
+  address: 0
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 9
+  address: 11
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 9
+  address: 16
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 12
+  address: 10
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 13
+  address: 0
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 13
+  address: 17
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 14
+  address: 1
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 15
+  address: 4
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 15
+  address: 6
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 17
+  address: 6
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 1
+  address: 19
+  address: 9
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 0
+  address: 2
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 1
+  address: 2
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 1
+  address: 5
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 1
+  address: 19
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 2
+  address: 10
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 3
+  address: 19
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 4
+  address: 6
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 5
+  address: 1
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 5
+  address: 5
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 5
+  address: 8
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 5
+  address: 19
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 6
+  address: 9
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 7
+  address: 16
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 9
+  address: 16
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 10
+  address: 6
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 12
+  address: 0
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 13
+  address: 6
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 13
+  address: 13
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 14
+  address: 2
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 14
+  address: 5
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 15
+  address: 0
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 15
+  address: 11
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 15
+  address: 17
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 15
+  address: 19
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 16
+  address: 1
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 16
+  address: 19
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 2
+  address: 18
+  address: 8
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 0
+  address: 4
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 0
+  address: 16
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 1
+  address: 2
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 1
+  address: 7
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 2
+  address: 1
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 2
+  address: 15
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 3
+  address: 16
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 4
+  address: 7
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 4
+  address: 15
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 4
+  address: 16
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 4
+  address: 19
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 5
+  address: 17
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 8
+  address: 10
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 9
+  address: 9
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 10
+  address: 8
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 10
+  address: 10
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 10
+  address: 16
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 15
+  address: 9
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 15
+  address: 10
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 15
+  address: 14
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 16
+  address: 15
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 17
+  address: 18
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 19
+  address: 0
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 3
+  address: 19
+  address: 3
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 0
+  address: 0
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 2
+  address: 15
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 5
+  address: 17
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 6
+  address: 3
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 6
+  address: 14
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 8
+  address: 9
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 10
+  address: 7
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 11
+  address: 18
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 12
+  address: 1
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 12
+  address: 5
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 14
+  address: 14
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 16
+  address: 0
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 16
+  address: 5
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 17
+  address: 6
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 4
+  address: 18
+  address: 16
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 2
+  address: 16
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 3
+  address: 16
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 4
+  address: 3
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 4
+  address: 3
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 5
+  address: 3
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 5
+  address: 5
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 5
+  address: 10
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 6
+  address: 9
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 7
+  address: 3
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 7
+  address: 13
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 7
+  address: 15
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 8
+  address: 0
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 9
+  address: 2
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 9
+  address: 19
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 10
+  address: 15
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 13
+  address: 8
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 13
+  address: 11
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 15
+  address: 4
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 16
+  address: 7
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 16
+  address: 16
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 17
+  address: 0
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 17
+  address: 15
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 17
+  address: 16
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 17
+  address: 17
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 19
+  address: 10
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 19
+  address: 13
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 19
+  address: 15
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 19
+  address: 15
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 5
+  address: 19
+  address: 18
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 0
+  address: 2
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 1
+  address: 17
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 2
+  address: 17
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 5
+  address: 3
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 5
+  address: 7
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 5
+  address: 12
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 5
+  address: 13
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 7
+  address: 1
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 7
+  address: 2
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 11
+  address: 6
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 13
+  address: 3
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 13
+  address: 17
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 15
+  address: 7
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 17
+  address: 15
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 18
+  address: 4
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 18
+  address: 6
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 6
+  address: 18
+  address: 16
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 0
+  address: 7
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 2
+  address: 2
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 2
+  address: 6
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 3
+  address: 3
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 3
+  address: 16
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 5
+  address: 5
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 5
+  address: 11
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 6
+  address: 7
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 8
+  address: 8
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 8
+  address: 14
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 10
+  address: 14
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 11
+  address: 12
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 11
+  address: 18
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 12
+  address: 5
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 14
+  address: 5
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 16
+  address: 1
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 16
+  address: 14
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 7
+  address: 17
+  address: 12
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 4
+  address: 11
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 4
+  address: 19
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 5
+  address: 3
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 6
+  address: 17
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 9
+  address: 19
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 14
+  address: 0
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 14
+  address: 19
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 15
+  address: 1
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 15
+  address: 18
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 16
+  address: 7
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 16
+  address: 18
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 17
+  address: 14
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 18
+  address: 11
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 18
+  address: 16
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 8
+  address: 18
+  address: 17
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 0
+  address: 2
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 1
+  address: 6
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 2
+  address: 0
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 2
+  address: 9
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 4
+  address: 8
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 8
+  address: 19
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 9
+  address: 9
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 9
+  address: 19
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 10
+  address: 0
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 10
+  address: 6
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 11
+  address: 8
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 12
+  address: 15
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 12
+  address: 18
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 14
+  address: 2
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 14
+  address: 15
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 15
+  address: 12
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 15
+  address: 18
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 16
+  address: 6
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 16
+  address: 18
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 17
+  address: 4
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 18
+  address: 19
+  address: 4
+  player: "Ralph_czcu"
+}
+updatedCells {
+  address: 9
+  address: 19
+  address: 5
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 9
+  address: 19
+  address: 14
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 0
+  address: 9
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 0
+  address: 15
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 1
+  address: 15
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 2
+  address: 17
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 3
+  address: 4
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 3
+  address: 10
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 5
+  address: 16
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 6
+  address: 17
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 7
+  address: 0
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 7
+  address: 4
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 8
+  address: 4
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 9
+  address: 6
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 9
+  address: 19
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 14
+  address: 15
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 16
+  address: 3
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 16
+  address: 11
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 17
+  address: 18
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 10
+  address: 19
+  address: 14
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 1
+  address: 9
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 2
+  address: 4
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 2
+  address: 11
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 2
+  address: 14
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 4
+  address: 1
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 7
+  address: 13
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 8
+  address: 1
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 8
+  address: 8
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 9
+  address: 2
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 9
+  address: 13
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 10
+  address: 7
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 10
+  address: 11
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 10
+  address: 13
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 10
+  address: 14
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 12
+  address: 9
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 11
+  address: 15
+  address: 6
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 0
+  address: 13
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 1
+  address: 0
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 2
+  address: 6
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 2
+  address: 16
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 4
+  address: 4
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 4
+  address: 16
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 5
+  address: 11
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 6
+  address: 3
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 6
+  address: 7
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 7
+  address: 1
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 7
+  address: 8
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 7
+  address: 19
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 8
+  address: 4
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 9
+  address: 17
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 10
+  address: 4
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 11
+  address: 10
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 12
+  address: 15
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 15
+  address: 17
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 16
+  address: 5
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 16
+  address: 10
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 18
+  address: 7
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 18
+  address: 15
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 18
+  address: 16
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 12
+  address: 19
+  address: 15
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 0
+  address: 0
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 0
+  address: 8
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 0
+  address: 11
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 0
+  address: 13
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 1
+  address: 1
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 1
+  address: 6
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 2
+  address: 2
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 3
+  address: 5
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 7
+  address: 10
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 8
+  address: 19
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 10
+  address: 13
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 11
+  address: 10
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 12
+  address: 2
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 12
+  address: 6
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 13
+  address: 0
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 14
+  address: 0
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 15
+  address: 6
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 15
+  address: 7
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 18
+  address: 7
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 19
+  address: 0
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 19
+  address: 9
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 13
+  address: 19
+  address: 11
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 1
+  address: 1
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 1
+  address: 2
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 1
+  address: 9
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 1
+  address: 18
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 3
+  address: 19
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 4
+  address: 8
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 5
+  address: 4
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 5
+  address: 6
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 6
+  address: 17
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 6
+  address: 17
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 7
+  address: 5
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 7
+  address: 14
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 11
+  address: 19
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 12
+  address: 4
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 14
+  address: 4
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 15
+  address: 16
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 15
+  address: 17
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 16
+  address: 1
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 16
+  address: 2
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 17
+  address: 17
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 14
+  address: 19
+  address: 10
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 2
+  address: 16
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 3
+  address: 16
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 4
+  address: 3
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 5
+  address: 6
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 8
+  address: 19
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 10
+  address: 5
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 11
+  address: 5
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 13
+  address: 8
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 14
+  address: 0
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 14
+  address: 1
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 14
+  address: 17
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 15
+  address: 6
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 17
+  address: 10
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 17
+  address: 13
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 17
+  address: 15
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 15
+  address: 18
+  address: 8
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 1
+  address: 0
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 1
+  address: 9
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 3
+  address: 0
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 4
+  address: 0
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 5
+  address: 6
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 6
+  address: 1
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 6
+  address: 10
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 6
+  address: 15
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 7
+  address: 17
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 8
+  address: 2
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 8
+  address: 15
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 13
+  address: 4
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 13
+  address: 19
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 14
+  address: 9
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 15
+  address: 1
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 16
+  address: 0
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 16
+  address: 1
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 16
+  address: 2
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 16
+  address: 11
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 17
+  address: 1
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 17
+  address: 2
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 17
+  address: 6
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 18
+  address: 5
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 18
+  address: 6
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 16
+  address: 19
+  address: 12
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 2
+  address: 17
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 4
+  address: 1
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 4
+  address: 17
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 5
+  address: 10
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 6
+  address: 2
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 6
+  address: 10
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 6
+  address: 13
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 8
+  address: 7
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 9
+  address: 3
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 12
+  address: 5
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 13
+  address: 18
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 15
+  address: 7
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 17
+  address: 16
+  address: 7
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 2
+  address: 0
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 2
+  address: 12
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 2
+  address: 18
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 3
+  address: 1
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 3
+  address: 2
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 3
+  address: 12
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 5
+  address: 4
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 6
+  address: 4
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 7
+  address: 12
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 7
+  address: 13
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 7
+  address: 19
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 8
+  address: 0
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 8
+  address: 13
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 11
+  address: 18
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 13
+  address: 3
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 13
+  address: 18
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 16
+  address: 14
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 17
+  address: 7
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 19
+  address: 2
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 18
+  address: 19
+  address: 4
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 0
+  address: 0
+  address: 0
+  player: "BlackAdder"
+}
+updatedCells {
+  address: 19
+  address: 0
+  address: 17
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 0
+  address: 19
+  address: 0
+  player: "BlackAdder"
+}
+updatedCells {
+  address: 19
+  address: 1
+  address: 7
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 1
+  address: 16
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 2
+  address: 19
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 3
+  address: 3
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 3
+  address: 9
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 5
+  address: 8
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 5
+  address: 11
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 5
+  address: 12
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 6
+  address: 6
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 6
+  address: 15
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 8
+  address: 7
+  address: 1
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 9
+  address: 3
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 10
+  address: 17
+  address: 0
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 12
+  address: 8
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 16
+  address: 14
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 17
+  address: 0
+  address: 2
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 17
+  address: 1
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 17
+  address: 18
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 19
+  address: 0
+  address: 4
+  player: "BlackAdder"
+}
+updatedCells {
+  address: 19
+  address: 19
+  address: 1
+  address: 3
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 19
+  address: 11
+  address: 4
+  foodValue: 1
+}
+updatedCells {
+  address: 19
+  address: 19
+  address: 19
+  address: 0
+  player: "BlackAdder"
+}
+
+Register response:
+dimensions: 20
+dimensions: 20
+dimensions: 20
+dimensions: 5
+startAddress: 19
+startAddress: 0
+startAddress: 19
+startAddress: 4
+playerIdentifier: "31de8202-dcec-4a07-b388-284994e8e7c0"
+gameStarted: true
+
+creating new snake: Kølin
+snake is created: Kølin
+
+Food Cells:
+[Address: [0, 2, 13, 4], Content: ßßßßß, Address: [0, 3, 1, 1], Content: ßßßßß, Address: [0, 5, 0, 2], Content: ßßßßß, Address: [0, 8, 10, 0], Content: ßßßßß, Address: [0, 8, 14, 3], Content: ßßßßß, Address: [0, 9, 9, 4], Content: ßßßßß, Address: [0, 10, 1, 0], Content: ßßßßß, Address: [0, 11, 8, 1], Content: ßßßßß, Address: [0, 11, 9, 2], Content: ßßßßß, Address: [0, 12, 6, 3], Content: ßßßßß, Address: [0, 14, 5, 4], Content: ßßßßß, Address: [0, 14, 18, 4], Content: ßßßßß, Address: [0, 15, 7, 4], Content: ßßßßß, Address: [0, 16, 18, 2], Content: ßßßßß, Address: [0, 17, 12, 4], Content: ßßßßß, Address: [0, 17, 13, 0], Content: ßßßßß, Address: [0, 18, 0, 2], Content: ßßßßß, Address: [0, 18, 4, 2], Content: ßßßßß, Address: [0, 19, 3, 0], Content: ßßßßß, Address: [0, 19, 16, 1], Content: ßßßßß, Address: [1, 1, 7, 4], Content: ßßßßß, Address: [1, 4, 4, 3], Content: ßßßßß, Address: [1, 5, 16, 1], Content: ßßßßß, Address: [1, 8, 10, 1], Content: ßßßßß, Address: [1, 8, 12, 3], Content: ßßßßß, Address: [1, 8, 16, 1], Content: ßßßßß, Address: [1, 9, 0, 2], Content: ßßßßß, Address: [1, 9, 11, 1], Content: ßßßßß, Address: [1, 9, 16, 3], Content: ßßßßß, Address: [1, 12, 10, 3], Content: ßßßßß, Address: [1, 13, 0, 0], Content: ßßßßß, Address: [1, 13, 17, 1], Content: ßßßßß, Address: [1, 14, 1, 4], Content: ßßßßß, Address: [1, 15, 4, 1], Content: ßßßßß, Address: [1, 15, 6, 4], Content: ßßßßß, Address: [1, 17, 6, 3], Content: ßßßßß, Address: [1, 19, 9, 0], Content: ßßßßß, Address: [2, 0, 2, 0], Content: ßßßßß, Address: [2, 1, 2, 1], Content: ßßßßß, Address: [2, 1, 5, 2], Content: ßßßßß, Address: [2, 1, 19, 2], Content: ßßßßß, Address: [2, 2, 10, 1], Content: ßßßßß, Address: [2, 3, 19, 0], Content: ßßßßß, Address: [2, 4, 6, 2], Content: ßßßßß, Address: [2, 5, 1, 4], Content: ßßßßß, Address: [2, 5, 5, 2], Content: ßßßßß, Address: [2, 5, 8, 4], Content: ßßßßß, Address: [2, 5, 19, 1], Content: ßßßßß, Address: [2, 6, 9, 1], Content: ßßßßß, Address: [2, 7, 16, 4], Content: ßßßßß, Address: [2, 9, 16, 1], Content: ßßßßß, Address: [2, 10, 6, 3], Content: ßßßßß, Address: [2, 12, 0, 1], Content: ßßßßß, Address: [2, 13, 6, 2], Content: ßßßßß, Address: [2, 13, 13, 0], Content: ßßßßß, Address: [2, 14, 2, 1], Content: ßßßßß, Address: [2, 14, 5, 4], Content: ßßßßß, Address: [2, 15, 0, 2], Content: ßßßßß, Address: [2, 15, 11, 2], Content: ßßßßß, Address: [2, 15, 17, 0], Content: ßßßßß, Address: [2, 15, 19, 1], Content: ßßßßß, Address: [2, 16, 1, 4], Content: ßßßßß, Address: [2, 16, 19, 0], Content: ßßßßß, Address: [2, 18, 8, 1], Content: ßßßßß, Address: [3, 0, 4, 4], Content: ßßßßß, Address: [3, 0, 16, 1], Content: ßßßßß, Address: [3, 1, 2, 1], Content: ßßßßß, Address: [3, 1, 7, 4], Content: ßßßßß, Address: [3, 2, 1, 4], Content: ßßßßß, Address: [3, 2, 15, 3], Content: ßßßßß, Address: [3, 3, 16, 4], Content: ßßßßß, Address: [3, 4, 7, 4], Content: ßßßßß, Address: [3, 4, 15, 3], Content: ßßßßß, Address: [3, 4, 16, 4], Content: ßßßßß, Address: [3, 4, 19, 1], Content: ßßßßß, Address: [3, 5, 17, 2], Content: ßßßßß, Address: [3, 8, 10, 4], Content: ßßßßß, Address: [3, 9, 9, 2], Content: ßßßßß, Address: [3, 10, 8, 1], Content: ßßßßß, Address: [3, 10, 10, 0], Content: ßßßßß, Address: [3, 10, 16, 3], Content: ßßßßß, Address: [3, 15, 9, 2], Content: ßßßßß, Address: [3, 15, 10, 2], Content: ßßßßß, Address: [3, 15, 14, 0], Content: ßßßßß, Address: [3, 16, 15, 1], Content: ßßßßß, Address: [3, 17, 18, 4], Content: ßßßßß, Address: [3, 19, 0, 0], Content: ßßßßß, Address: [3, 19, 3, 1], Content: ßßßßß, Address: [4, 0, 0, 2], Content: ßßßßß, Address: [4, 2, 15, 1], Content: ßßßßß, Address: [4, 5, 17, 2], Content: ßßßßß, Address: [4, 6, 3, 3], Content: ßßßßß, Address: [4, 6, 14, 3], Content: ßßßßß, Address: [4, 8, 9, 4], Content: ßßßßß, Address: [4, 10, 7, 0], Content: ßßßßß, Address: [4, 11, 18, 2], Content: ßßßßß, Address: [4, 12, 1, 0], Content: ßßßßß, Address: [4, 12, 5, 3], Content: ßßßßß, Address: [4, 14, 14, 1], Content: ßßßßß, Address: [4, 16, 0, 0], Content: ßßßßß, Address: [4, 16, 5, 2], Content: ßßßßß, Address: [4, 17, 6, 0], Content: ßßßßß, Address: [4, 18, 16, 1], Content: ßßßßß, Address: [5, 2, 16, 1], Content: ßßßßß, Address: [5, 3, 16, 3], Content: ßßßßß, Address: [5, 4, 3, 1], Content: ßßßßß, Address: [5, 4, 3, 2], Content: ßßßßß, Address: [5, 5, 3, 0], Content: ßßßßß, Address: [5, 5, 5, 3], Content: ßßßßß, Address: [5, 5, 10, 3], Content: ßßßßß, Address: [5, 6, 9, 4], Content: ßßßßß, Address: [5, 7, 3, 4], Content: ßßßßß, Address: [5, 7, 13, 3], Content: ßßßßß, Address: [5, 7, 15, 2], Content: ßßßßß, Address: [5, 8, 0, 1], Content: ßßßßß, Address: [5, 9, 2, 4], Content: ßßßßß, Address: [5, 9, 19, 0], Content: ßßßßß, Address: [5, 10, 15, 3], Content: ßßßßß, Address: [5, 13, 8, 3], Content: ßßßßß, Address: [5, 13, 11, 1], Content: ßßßßß, Address: [5, 15, 4, 4], Content: ßßßßß, Address: [5, 16, 7, 1], Content: ßßßßß, Address: [5, 16, 16, 3], Content: ßßßßß, Address: [5, 17, 0, 1], Content: ßßßßß, Address: [5, 17, 15, 3], Content: ßßßßß, Address: [5, 17, 16, 3], Content: ßßßßß, Address: [5, 17, 17, 3], Content: ßßßßß, Address: [5, 19, 10, 0], Content: ßßßßß, Address: [5, 19, 13, 2], Content: ßßßßß, Address: [5, 19, 15, 0], Content: ßßßßß, Address: [5, 19, 15, 2], Content: ßßßßß, Address: [5, 19, 18, 3], Content: ßßßßß, Address: [6, 0, 2, 3], Content: ßßßßß, Address: [6, 1, 17, 3], Content: ßßßßß, Address: [6, 2, 17, 1], Content: ßßßßß, Address: [6, 5, 3, 4], Content: ßßßßß, Address: [6, 5, 7, 2], Content: ßßßßß, Address: [6, 5, 12, 0], Content: ßßßßß, Address: [6, 5, 13, 4], Content: ßßßßß, Address: [6, 7, 1, 1], Content: ßßßßß, Address: [6, 7, 2, 2], Content: ßßßßß, Address: [6, 11, 6, 3], Content: ßßßßß, Address: [6, 13, 3, 3], Content: ßßßßß, Address: [6, 13, 17, 4], Content: ßßßßß, Address: [6, 15, 7, 4], Content: ßßßßß, Address: [6, 17, 15, 4], Content: ßßßßß, Address: [6, 18, 4, 4], Content: ßßßßß, Address: [6, 18, 6, 4], Content: ßßßßß, Address: [6, 18, 16, 4], Content: ßßßßß, Address: [7, 0, 7, 3], Content: ßßßßß, Address: [7, 2, 2, 4], Content: ßßßßß, Address: [7, 2, 6, 3], Content: ßßßßß, Address: [7, 3, 3, 2], Content: ßßßßß, Address: [7, 3, 16, 0], Content: ßßßßß, Address: [7, 5, 5, 1], Content: ßßßßß, Address: [7, 5, 11, 4], Content: ßßßßß, Address: [7, 6, 7, 4], Content: ßßßßß, Address: [7, 8, 8, 3], Content: ßßßßß, Address: [7, 8, 14, 3], Content: ßßßßß, Address: [7, 10, 14, 4], Content: ßßßßß, Address: [7, 11, 12, 1], Content: ßßßßß, Address: [7, 11, 18, 2], Content: ßßßßß, Address: [7, 12, 5, 0], Content: ßßßßß, Address: [7, 14, 5, 4], Content: ßßßßß, Address: [7, 16, 1, 3], Content: ßßßßß, Address: [7, 16, 14, 2], Content: ßßßßß, Address: [7, 17, 12, 0], Content: ßßßßß, Address: [8, 4, 11, 1], Content: ßßßßß, Address: [8, 4, 19, 3], Content: ßßßßß, Address: [8, 5, 3, 1], Content: ßßßßß, Address: [8, 6, 17, 1], Content: ßßßßß, Address: [8, 9, 19, 1], Content: ßßßßß, Address: [8, 14, 0, 2], Content: ßßßßß, Address: [8, 14, 19, 0], Content: ßßßßß, Address: [8, 15, 1, 0], Content: ßßßßß, Address: [8, 15, 18, 4], Content: ßßßßß, Address: [8, 16, 7, 0], Content: ßßßßß, Address: [8, 16, 18, 0], Content: ßßßßß, Address: [8, 17, 14, 4], Content: ßßßßß, Address: [8, 18, 11, 0], Content: ßßßßß, Address: [8, 18, 16, 0], Content: ßßßßß, Address: [8, 18, 17, 2], Content: ßßßßß, Address: [9, 0, 2, 2], Content: ßßßßß, Address: [9, 1, 6, 0], Content: ßßßßß, Address: [9, 2, 0, 3], Content: ßßßßß, Address: [9, 2, 9, 4], Content: ßßßßß, Address: [9, 4, 8, 2], Content: ßßßßß, Address: [9, 8, 19, 1], Content: ßßßßß, Address: [9, 9, 9, 1], Content: ßßßßß, Address: [9, 9, 19, 1], Content: ßßßßß, Address: [9, 10, 0, 0], Content: ßßßßß, Address: [9, 10, 6, 4], Content: ßßßßß, Address: [9, 11, 8, 3], Content: ßßßßß, Address: [9, 12, 15, 4], Content: ßßßßß, Address: [9, 12, 18, 4], Content: ßßßßß, Address: [9, 14, 2, 2], Content: ßßßßß, Address: [9, 14, 15, 3], Content: ßßßßß, Address: [9, 15, 12, 0], Content: ßßßßß, Address: [9, 15, 18, 4], Content: ßßßßß, Address: [9, 16, 6, 0], Content: ßßßßß, Address: [9, 16, 18, 0], Content: ßßßßß, Address: [9, 17, 4, 3], Content: ßßßßß, Address: [9, 19, 5, 0], Content: ßßßßß, Address: [9, 19, 14, 3], Content: ßßßßß, Address: [10, 0, 9, 3], Content: ßßßßß, Address: [10, 0, 15, 4], Content: ßßßßß, Address: [10, 1, 15, 1], Content: ßßßßß, Address: [10, 2, 17, 3], Content: ßßßßß, Address: [10, 3, 4, 2], Content: ßßßßß, Address: [10, 3, 10, 0], Content: ßßßßß, Address: [10, 5, 16, 0], Content: ßßßßß, Address: [10, 6, 17, 0], Content: ßßßßß, Address: [10, 7, 0, 1], Content: ßßßßß, Address: [10, 7, 4, 0], Content: ßßßßß, Address: [10, 8, 4, 1], Content: ßßßßß, Address: [10, 9, 6, 2], Content: ßßßßß, Address: [10, 9, 19, 0], Content: ßßßßß, Address: [10, 14, 15, 3], Content: ßßßßß, Address: [10, 16, 3, 2], Content: ßßßßß, Address: [10, 16, 11, 2], Content: ßßßßß, Address: [10, 17, 18, 2], Content: ßßßßß, Address: [10, 19, 14, 2], Content: ßßßßß, Address: [11, 1, 9, 2], Content: ßßßßß, Address: [11, 2, 4, 4], Content: ßßßßß, Address: [11, 2, 11, 3], Content: ßßßßß, Address: [11, 2, 14, 3], Content: ßßßßß, Address: [11, 4, 1, 4], Content: ßßßßß, Address: [11, 7, 13, 0], Content: ßßßßß, Address: [11, 8, 1, 0], Content: ßßßßß, Address: [11, 8, 8, 2], Content: ßßßßß, Address: [11, 9, 2, 2], Content: ßßßßß, Address: [11, 9, 13, 2], Content: ßßßßß, Address: [11, 10, 7, 2], Content: ßßßßß, Address: [11, 10, 11, 1], Content: ßßßßß, Address: [11, 10, 13, 3], Content: ßßßßß, Address: [11, 10, 14, 3], Content: ßßßßß, Address: [11, 12, 9, 4], Content: ßßßßß, Address: [11, 15, 6, 4], Content: ßßßßß, Address: [12, 0, 13, 3], Content: ßßßßß, Address: [12, 1, 0, 2], Content: ßßßßß, Address: [12, 2, 6, 2], Content: ßßßßß, Address: [12, 2, 16, 0], Content: ßßßßß, Address: [12, 4, 4, 3], Content: ßßßßß, Address: [12, 4, 16, 2], Content: ßßßßß, Address: [12, 5, 11, 4], Content: ßßßßß, Address: [12, 6, 3, 3], Content: ßßßßß, Address: [12, 6, 7, 2], Content: ßßßßß, Address: [12, 7, 1, 2], Content: ßßßßß, Address: [12, 7, 8, 4], Content: ßßßßß, Address: [12, 7, 19, 1], Content: ßßßßß, Address: [12, 8, 4, 3], Content: ßßßßß, Address: [12, 9, 17, 4], Content: ßßßßß, Address: [12, 10, 4, 3], Content: ßßßßß, Address: [12, 11, 10, 3], Content: ßßßßß, Address: [12, 12, 15, 1], Content: ßßßßß, Address: [12, 15, 17, 3], Content: ßßßßß, Address: [12, 16, 5, 1], Content: ßßßßß, Address: [12, 16, 10, 0], Content: ßßßßß, Address: [12, 18, 7, 2], Content: ßßßßß, Address: [12, 18, 15, 0], Content: ßßßßß, Address: [12, 18, 16, 0], Content: ßßßßß, Address: [12, 19, 15, 0], Content: ßßßßß, Address: [13, 0, 0, 0], Content: ßßßßß, Address: [13, 0, 8, 4], Content: ßßßßß, Address: [13, 0, 11, 1], Content: ßßßßß, Address: [13, 0, 13, 4], Content: ßßßßß, Address: [13, 1, 1, 0], Content: ßßßßß, Address: [13, 1, 6, 4], Content: ßßßßß, Address: [13, 2, 2, 1], Content: ßßßßß, Address: [13, 3, 5, 0], Content: ßßßßß, Address: [13, 7, 10, 2], Content: ßßßßß, Address: [13, 8, 19, 0], Content: ßßßßß, Address: [13, 10, 13, 2], Content: ßßßßß, Address: [13, 11, 10, 2], Content: ßßßßß, Address: [13, 12, 2, 2], Content: ßßßßß, Address: [13, 12, 6, 2], Content: ßßßßß, Address: [13, 13, 0, 4], Content: ßßßßß, Address: [13, 14, 0, 0], Content: ßßßßß, Address: [13, 15, 6, 4], Content: ßßßßß, Address: [13, 15, 7, 0], Content: ßßßßß, Address: [13, 18, 7, 1], Content: ßßßßß, Address: [13, 19, 0, 4], Content: ßßßßß, Address: [13, 19, 9, 0], Content: ßßßßß, Address: [13, 19, 11, 3], Content: ßßßßß, Address: [14, 1, 1, 2], Content: ßßßßß, Address: [14, 1, 2, 4], Content: ßßßßß, Address: [14, 1, 9, 0], Content: ßßßßß, Address: [14, 1, 18, 3], Content: ßßßßß, Address: [14, 3, 19, 0], Content: ßßßßß, Address: [14, 4, 8, 0], Content: ßßßßß, Address: [14, 5, 4, 3], Content: ßßßßß, Address: [14, 5, 6, 0], Content: ßßßßß, Address: [14, 6, 17, 2], Content: ßßßßß, Address: [14, 6, 17, 4], Content: ßßßßß, Address: [14, 7, 5, 2], Content: ßßßßß, Address: [14, 7, 14, 2], Content: ßßßßß, Address: [14, 11, 19, 4], Content: ßßßßß, Address: [14, 12, 4, 4], Content: ßßßßß, Address: [14, 14, 4, 2], Content: ßßßßß, Address: [14, 15, 16, 2], Content: ßßßßß, Address: [14, 15, 17, 4], Content: ßßßßß, Address: [14, 16, 1, 0], Content: ßßßßß, Address: [14, 16, 2, 2], Content: ßßßßß, Address: [14, 17, 17, 1], Content: ßßßßß, Address: [14, 19, 10, 1], Content: ßßßßß, Address: [15, 2, 16, 0], Content: ßßßßß, Address: [15, 3, 16, 0], Content: ßßßßß, Address: [15, 4, 3, 1], Content: ßßßßß, Address: [15, 5, 6, 1], Content: ßßßßß, Address: [15, 8, 19, 2], Content: ßßßßß, Address: [15, 10, 5, 4], Content: ßßßßß, Address: [15, 11, 5, 3], Content: ßßßßß, Address: [15, 13, 8, 2], Content: ßßßßß, Address: [15, 14, 0, 0], Content: ßßßßß, Address: [15, 14, 1, 3], Content: ßßßßß, Address: [15, 14, 17, 2], Content: ßßßßß, Address: [15, 15, 6, 2], Content: ßßßßß, Address: [15, 17, 10, 2], Content: ßßßßß, Address: [15, 17, 13, 0], Content: ßßßßß, Address: [15, 17, 15, 0], Content: ßßßßß, Address: [15, 18, 8, 0], Content: ßßßßß, Address: [16, 1, 0, 3], Content: ßßßßß, Address: [16, 1, 9, 2], Content: ßßßßß, Address: [16, 3, 0, 3], Content: ßßßßß, Address: [16, 4, 0, 0], Content: ßßßßß, Address: [16, 5, 6, 4], Content: ßßßßß, Address: [16, 6, 1, 1], Content: ßßßßß, Address: [16, 6, 10, 1], Content: ßßßßß, Address: [16, 6, 15, 0], Content: ßßßßß, Address: [16, 7, 17, 4], Content: ßßßßß, Address: [16, 8, 2, 0], Content: ßßßßß, Address: [16, 8, 15, 3], Content: ßßßßß, Address: [16, 13, 4, 2], Content: ßßßßß, Address: [16, 13, 19, 4], Content: ßßßßß, Address: [16, 14, 9, 1], Content: ßßßßß, Address: [16, 15, 1, 0], Content: ßßßßß, Address: [16, 16, 0, 3], Content: ßßßßß, Address: [16, 16, 1, 1], Content: ßßßßß, Address: [16, 16, 2, 3], Content: ßßßßß, Address: [16, 16, 11, 2], Content: ßßßßß, Address: [16, 17, 1, 2], Content: ßßßßß, Address: [16, 17, 2, 0], Content: ßßßßß, Address: [16, 17, 6, 2], Content: ßßßßß, Address: [16, 18, 5, 2], Content: ßßßßß, Address: [16, 18, 6, 3], Content: ßßßßß, Address: [16, 19, 12, 4], Content: ßßßßß, Address: [17, 2, 17, 1], Content: ßßßßß, Address: [17, 4, 1, 0], Content: ßßßßß, Address: [17, 4, 17, 2], Content: ßßßßß, Address: [17, 5, 10, 3], Content: ßßßßß, Address: [17, 6, 2, 1], Content: ßßßßß, Address: [17, 6, 10, 2], Content: ßßßßß, Address: [17, 6, 13, 4], Content: ßßßßß, Address: [17, 8, 7, 4], Content: ßßßßß, Address: [17, 9, 3, 4], Content: ßßßßß, Address: [17, 12, 5, 3], Content: ßßßßß, Address: [17, 13, 18, 2], Content: ßßßßß, Address: [17, 15, 7, 2], Content: ßßßßß, Address: [17, 16, 7, 3], Content: ßßßßß, Address: [18, 2, 0, 2], Content: ßßßßß, Address: [18, 2, 12, 3], Content: ßßßßß, Address: [18, 2, 18, 1], Content: ßßßßß, Address: [18, 3, 1, 2], Content: ßßßßß, Address: [18, 3, 2, 2], Content: ßßßßß, Address: [18, 3, 12, 3], Content: ßßßßß, Address: [18, 5, 4, 3], Content: ßßßßß, Address: [18, 6, 4, 1], Content: ßßßßß, Address: [18, 7, 12, 4], Content: ßßßßß, Address: [18, 7, 13, 2], Content: ßßßßß, Address: [18, 7, 19, 3], Content: ßßßßß, Address: [18, 8, 0, 2], Content: ßßßßß, Address: [18, 8, 13, 1], Content: ßßßßß, Address: [18, 11, 18, 2], Content: ßßßßß, Address: [18, 13, 3, 4], Content: ßßßßß, Address: [18, 13, 18, 4], Content: ßßßßß, Address: [18, 16, 14, 4], Content: ßßßßß, Address: [18, 17, 7, 2], Content: ßßßßß, Address: [18, 19, 2, 2], Content: ßßßßß, Address: [18, 19, 4, 4], Content: ßßßßß, Address: [19, 0, 17, 2], Content: ßßßßß, Address: [19, 1, 7, 3], Content: ßßßßß, Address: [19, 1, 16, 1], Content: ßßßßß, Address: [19, 2, 19, 1], Content: ßßßßß, Address: [19, 3, 3, 4], Content: ßßßßß, Address: [19, 3, 9, 2], Content: ßßßßß, Address: [19, 5, 8, 2], Content: ßßßßß, Address: [19, 5, 11, 4], Content: ßßßßß, Address: [19, 5, 12, 1], Content: ßßßßß, Address: [19, 6, 6, 0], Content: ßßßßß, Address: [19, 6, 15, 0], Content: ßßßßß, Address: [19, 8, 7, 1], Content: ßßßßß, Address: [19, 9, 3, 4], Content: ßßßßß, Address: [19, 10, 17, 0], Content: ßßßßß, Address: [19, 12, 8, 3], Content: ßßßßß, Address: [19, 16, 14, 4], Content: ßßßßß, Address: [19, 17, 0, 2], Content: ßßßßß, Address: [19, 17, 1, 4], Content: ßßßßß, Address: [19, 17, 18, 3], Content: ßßßßß, Address: [19, 19, 1, 3], Content: ßßßßß, Address: [19, 19, 11, 4], Content: ßßßßß]
+
+Player Cells:
+[Address: [0, 2, 13, 4], Content: ßßßßß, Address: [0, 3, 1, 1], Content: ßßßßß, Address: [0, 5, 0, 2], Content: ßßßßß, Address: [0, 8, 10, 0], Content: ßßßßß, Address: [0, 8, 14, 3], Content: ßßßßß, Address: [0, 9, 9, 4], Content: ßßßßß, Address: [0, 10, 1, 0], Content: ßßßßß, Address: [0, 11, 8, 1], Content: ßßßßß, Address: [0, 11, 9, 2], Content: ßßßßß, Address: [0, 12, 6, 3], Content: ßßßßß, Address: [0, 14, 5, 4], Content: ßßßßß, Address: [0, 14, 18, 4], Content: ßßßßß, Address: [0, 15, 7, 4], Content: ßßßßß, Address: [0, 16, 18, 2], Content: ßßßßß, Address: [0, 17, 12, 4], Content: ßßßßß, Address: [0, 17, 13, 0], Content: ßßßßß, Address: [0, 18, 0, 2], Content: ßßßßß, Address: [0, 18, 4, 2], Content: ßßßßß, Address: [0, 19, 3, 0], Content: ßßßßß, Address: [0, 19, 16, 1], Content: ßßßßß, Address: [1, 1, 7, 4], Content: ßßßßß, Address: [1, 4, 4, 3], Content: ßßßßß, Address: [1, 5, 16, 1], Content: ßßßßß, Address: [1, 8, 10, 1], Content: ßßßßß, Address: [1, 8, 12, 3], Content: ßßßßß, Address: [1, 8, 16, 1], Content: ßßßßß, Address: [1, 9, 0, 2], Content: ßßßßß, Address: [1, 9, 11, 1], Content: ßßßßß, Address: [1, 9, 16, 3], Content: ßßßßß, Address: [1, 12, 10, 3], Content: ßßßßß, Address: [1, 13, 0, 0], Content: ßßßßß, Address: [1, 13, 17, 1], Content: ßßßßß, Address: [1, 14, 1, 4], Content: ßßßßß, Address: [1, 15, 4, 1], Content: ßßßßß, Address: [1, 15, 6, 4], Content: ßßßßß, Address: [1, 17, 6, 3], Content: ßßßßß, Address: [1, 19, 9, 0], Content: ßßßßß, Address: [2, 0, 2, 0], Content: ßßßßß, Address: [2, 1, 2, 1], Content: ßßßßß, Address: [2, 1, 5, 2], Content: ßßßßß, Address: [2, 1, 19, 2], Content: ßßßßß, Address: [2, 2, 10, 1], Content: ßßßßß, Address: [2, 3, 19, 0], Content: ßßßßß, Address: [2, 4, 6, 2], Content: ßßßßß, Address: [2, 5, 1, 4], Content: ßßßßß, Address: [2, 5, 5, 2], Content: ßßßßß, Address: [2, 5, 8, 4], Content: ßßßßß, Address: [2, 5, 19, 1], Content: ßßßßß, Address: [2, 6, 9, 1], Content: ßßßßß, Address: [2, 7, 16, 4], Content: ßßßßß, Address: [2, 9, 16, 1], Content: ßßßßß, Address: [2, 10, 6, 3], Content: ßßßßß, Address: [2, 12, 0, 1], Content: ßßßßß, Address: [2, 13, 6, 2], Content: ßßßßß, Address: [2, 13, 13, 0], Content: ßßßßß, Address: [2, 14, 2, 1], Content: ßßßßß, Address: [2, 14, 5, 4], Content: ßßßßß, Address: [2, 15, 0, 2], Content: ßßßßß, Address: [2, 15, 11, 2], Content: ßßßßß, Address: [2, 15, 17, 0], Content: ßßßßß, Address: [2, 15, 19, 1], Content: ßßßßß, Address: [2, 16, 1, 4], Content: ßßßßß, Address: [2, 16, 19, 0], Content: ßßßßß, Address: [2, 18, 8, 1], Content: ßßßßß, Address: [3, 0, 4, 4], Content: ßßßßß, Address: [3, 0, 16, 1], Content: ßßßßß, Address: [3, 1, 2, 1], Content: ßßßßß, Address: [3, 1, 7, 4], Content: ßßßßß, Address: [3, 2, 1, 4], Content: ßßßßß, Address: [3, 2, 15, 3], Content: ßßßßß, Address: [3, 3, 16, 4], Content: ßßßßß, Address: [3, 4, 7, 4], Content: ßßßßß, Address: [3, 4, 15, 3], Content: ßßßßß, Address: [3, 4, 16, 4], Content: ßßßßß, Address: [3, 4, 19, 1], Content: ßßßßß, Address: [3, 5, 17, 2], Content: ßßßßß, Address: [3, 8, 10, 4], Content: ßßßßß, Address: [3, 9, 9, 2], Content: ßßßßß, Address: [3, 10, 8, 1], Content: ßßßßß, Address: [3, 10, 10, 0], Content: ßßßßß, Address: [3, 10, 16, 3], Content: ßßßßß, Address: [3, 15, 9, 2], Content: ßßßßß, Address: [3, 15, 10, 2], Content: ßßßßß, Address: [3, 15, 14, 0], Content: ßßßßß, Address: [3, 16, 15, 1], Content: ßßßßß, Address: [3, 17, 18, 4], Content: ßßßßß, Address: [3, 19, 0, 0], Content: ßßßßß, Address: [3, 19, 3, 1], Content: ßßßßß, Address: [4, 0, 0, 2], Content: ßßßßß, Address: [4, 2, 15, 1], Content: ßßßßß, Address: [4, 5, 17, 2], Content: ßßßßß, Address: [4, 6, 3, 3], Content: ßßßßß, Address: [4, 6, 14, 3], Content: ßßßßß, Address: [4, 8, 9, 4], Content: ßßßßß, Address: [4, 10, 7, 0], Content: ßßßßß, Address: [4, 11, 18, 2], Content: ßßßßß, Address: [4, 12, 1, 0], Content: ßßßßß, Address: [4, 12, 5, 3], Content: ßßßßß, Address: [4, 14, 14, 1], Content: ßßßßß, Address: [4, 16, 0, 0], Content: ßßßßß, Address: [4, 16, 5, 2], Content: ßßßßß, Address: [4, 17, 6, 0], Content: ßßßßß, Address: [4, 18, 16, 1], Content: ßßßßß, Address: [5, 2, 16, 1], Content: ßßßßß, Address: [5, 3, 16, 3], Content: ßßßßß, Address: [5, 4, 3, 1], Content: ßßßßß, Address: [5, 4, 3, 2], Content: ßßßßß, Address: [5, 5, 3, 0], Content: ßßßßß, Address: [5, 5, 5, 3], Content: ßßßßß, Address: [5, 5, 10, 3], Content: ßßßßß, Address: [5, 6, 9, 4], Content: ßßßßß, Address: [5, 7, 3, 4], Content: ßßßßß, Address: [5, 7, 13, 3], Content: ßßßßß, Address: [5, 7, 15, 2], Content: ßßßßß, Address: [5, 8, 0, 1], Content: ßßßßß, Address: [5, 9, 2, 4], Content: ßßßßß, Address: [5, 9, 19, 0], Content: ßßßßß, Address: [5, 10, 15, 3], Content: ßßßßß, Address: [5, 13, 8, 3], Content: ßßßßß, Address: [5, 13, 11, 1], Content: ßßßßß, Address: [5, 15, 4, 4], Content: ßßßßß, Address: [5, 16, 7, 1], Content: ßßßßß, Address: [5, 16, 16, 3], Content: ßßßßß, Address: [5, 17, 0, 1], Content: ßßßßß, Address: [5, 17, 15, 3], Content: ßßßßß, Address: [5, 17, 16, 3], Content: ßßßßß, Address: [5, 17, 17, 3], Content: ßßßßß, Address: [5, 19, 10, 0], Content: ßßßßß, Address: [5, 19, 13, 2], Content: ßßßßß, Address: [5, 19, 15, 0], Content: ßßßßß, Address: [5, 19, 15, 2], Content: ßßßßß, Address: [5, 19, 18, 3], Content: ßßßßß, Address: [6, 0, 2, 3], Content: ßßßßß, Address: [6, 1, 17, 3], Content: ßßßßß, Address: [6, 2, 17, 1], Content: ßßßßß, Address: [6, 5, 3, 4], Content: ßßßßß, Address: [6, 5, 7, 2], Content: ßßßßß, Address: [6, 5, 12, 0], Content: ßßßßß, Address: [6, 5, 13, 4], Content: ßßßßß, Address: [6, 7, 1, 1], Content: ßßßßß, Address: [6, 7, 2, 2], Content: ßßßßß, Address: [6, 11, 6, 3], Content: ßßßßß, Address: [6, 13, 3, 3], Content: ßßßßß, Address: [6, 13, 17, 4], Content: ßßßßß, Address: [6, 15, 7, 4], Content: ßßßßß, Address: [6, 17, 15, 4], Content: ßßßßß, Address: [6, 18, 4, 4], Content: ßßßßß, Address: [6, 18, 6, 4], Content: ßßßßß, Address: [6, 18, 16, 4], Content: ßßßßß, Address: [7, 0, 7, 3], Content: ßßßßß, Address: [7, 2, 2, 4], Content: ßßßßß, Address: [7, 2, 6, 3], Content: ßßßßß, Address: [7, 3, 3, 2], Content: ßßßßß, Address: [7, 3, 16, 0], Content: ßßßßß, Address: [7, 5, 5, 1], Content: ßßßßß, Address: [7, 5, 11, 4], Content: ßßßßß, Address: [7, 6, 7, 4], Content: ßßßßß, Address: [7, 8, 8, 3], Content: ßßßßß, Address: [7, 8, 14, 3], Content: ßßßßß, Address: [7, 10, 14, 4], Content: ßßßßß, Address: [7, 11, 12, 1], Content: ßßßßß, Address: [7, 11, 18, 2], Content: ßßßßß, Address: [7, 12, 5, 0], Content: ßßßßß, Address: [7, 14, 5, 4], Content: ßßßßß, Address: [7, 16, 1, 3], Content: ßßßßß, Address: [7, 16, 14, 2], Content: ßßßßß, Address: [7, 17, 12, 0], Content: ßßßßß, Address: [8, 4, 11, 1], Content: ßßßßß, Address: [8, 4, 19, 3], Content: ßßßßß, Address: [8, 5, 3, 1], Content: ßßßßß, Address: [8, 6, 17, 1], Content: ßßßßß, Address: [8, 9, 19, 1], Content: ßßßßß, Address: [8, 14, 0, 2], Content: ßßßßß, Address: [8, 14, 19, 0], Content: ßßßßß, Address: [8, 15, 1, 0], Content: ßßßßß, Address: [8, 15, 18, 4], Content: ßßßßß, Address: [8, 16, 7, 0], Content: ßßßßß, Address: [8, 16, 18, 0], Content: ßßßßß, Address: [8, 17, 14, 4], Content: ßßßßß, Address: [8, 18, 11, 0], Content: ßßßßß, Address: [8, 18, 16, 0], Content: ßßßßß, Address: [8, 18, 17, 2], Content: ßßßßß, Address: [9, 0, 2, 2], Content: ßßßßß, Address: [9, 1, 6, 0], Content: ßßßßß, Address: [9, 2, 0, 3], Content: ßßßßß, Address: [9, 2, 9, 4], Content: ßßßßß, Address: [9, 4, 8, 2], Content: ßßßßß, Address: [9, 8, 19, 1], Content: ßßßßß, Address: [9, 9, 9, 1], Content: ßßßßß, Address: [9, 9, 19, 1], Content: ßßßßß, Address: [9, 10, 0, 0], Content: ßßßßß, Address: [9, 10, 6, 4], Content: ßßßßß, Address: [9, 11, 8, 3], Content: ßßßßß, Address: [9, 12, 15, 4], Content: ßßßßß, Address: [9, 12, 18, 4], Content: ßßßßß, Address: [9, 14, 2, 2], Content: ßßßßß, Address: [9, 14, 15, 3], Content: ßßßßß, Address: [9, 15, 12, 0], Content: ßßßßß, Address: [9, 15, 18, 4], Content: ßßßßß, Address: [9, 16, 6, 0], Content: ßßßßß, Address: [9, 16, 18, 0], Content: ßßßßß, Address: [9, 17, 4, 3], Content: ßßßßß, Address: [9, 19, 5, 0], Content: ßßßßß, Address: [9, 19, 14, 3], Content: ßßßßß, Address: [10, 0, 9, 3], Content: ßßßßß, Address: [10, 0, 15, 4], Content: ßßßßß, Address: [10, 1, 15, 1], Content: ßßßßß, Address: [10, 2, 17, 3], Content: ßßßßß, Address: [10, 3, 4, 2], Content: ßßßßß, Address: [10, 3, 10, 0], Content: ßßßßß, Address: [10, 5, 16, 0], Content: ßßßßß, Address: [10, 6, 17, 0], Content: ßßßßß, Address: [10, 7, 0, 1], Content: ßßßßß, Address: [10, 7, 4, 0], Content: ßßßßß, Address: [10, 8, 4, 1], Content: ßßßßß, Address: [10, 9, 6, 2], Content: ßßßßß, Address: [10, 9, 19, 0], Content: ßßßßß, Address: [10, 14, 15, 3], Content: ßßßßß, Address: [10, 16, 3, 2], Content: ßßßßß, Address: [10, 16, 11, 2], Content: ßßßßß, Address: [10, 17, 18, 2], Content: ßßßßß, Address: [10, 19, 14, 2], Content: ßßßßß, Address: [11, 1, 9, 2], Content: ßßßßß, Address: [11, 2, 4, 4], Content: ßßßßß, Address: [11, 2, 11, 3], Content: ßßßßß, Address: [11, 2, 14, 3], Content: ßßßßß, Address: [11, 4, 1, 4], Content: ßßßßß, Address: [11, 7, 13, 0], Content: ßßßßß, Address: [11, 8, 1, 0], Content: ßßßßß, Address: [11, 8, 8, 2], Content: ßßßßß, Address: [11, 9, 2, 2], Content: ßßßßß, Address: [11, 9, 13, 2], Content: ßßßßß, Address: [11, 10, 7, 2], Content: ßßßßß, Address: [11, 10, 11, 1], Content: ßßßßß, Address: [11, 10, 13, 3], Content: ßßßßß, Address: [11, 10, 14, 3], Content: ßßßßß, Address: [11, 12, 9, 4], Content: ßßßßß, Address: [11, 15, 6, 4], Content: ßßßßß, Address: [12, 0, 13, 3], Content: ßßßßß, Address: [12, 1, 0, 2], Content: ßßßßß, Address: [12, 2, 6, 2], Content: ßßßßß, Address: [12, 2, 16, 0], Content: ßßßßß, Address: [12, 4, 4, 3], Content: ßßßßß, Address: [12, 4, 16, 2], Content: ßßßßß, Address: [12, 5, 11, 4], Content: ßßßßß, Address: [12, 6, 3, 3], Content: ßßßßß, Address: [12, 6, 7, 2], Content: ßßßßß, Address: [12, 7, 1, 2], Content: ßßßßß, Address: [12, 7, 8, 4], Content: ßßßßß, Address: [12, 7, 19, 1], Content: ßßßßß, Address: [12, 8, 4, 3], Content: ßßßßß, Address: [12, 9, 17, 4], Content: ßßßßß, Address: [12, 10, 4, 3], Content: ßßßßß, Address: [12, 11, 10, 3], Content: ßßßßß, Address: [12, 12, 15, 1], Content: ßßßßß, Address: [12, 15, 17, 3], Content: ßßßßß, Address: [12, 16, 5, 1], Content: ßßßßß, Address: [12, 16, 10, 0], Content: ßßßßß, Address: [12, 18, 7, 2], Content: ßßßßß, Address: [12, 18, 15, 0], Content: ßßßßß, Address: [12, 18, 16, 0], Content: ßßßßß, Address: [12, 19, 15, 0], Content: ßßßßß, Address: [13, 0, 0, 0], Content: ßßßßß, Address: [13, 0, 8, 4], Content: ßßßßß, Address: [13, 0, 11, 1], Content: ßßßßß, Address: [13, 0, 13, 4], Content: ßßßßß, Address: [13, 1, 1, 0], Content: ßßßßß, Address: [13, 1, 6, 4], Content: ßßßßß, Address: [13, 2, 2, 1], Content: ßßßßß, Address: [13, 3, 5, 0], Content: ßßßßß, Address: [13, 7, 10, 2], Content: ßßßßß, Address: [13, 8, 19, 0], Content: ßßßßß, Address: [13, 10, 13, 2], Content: ßßßßß, Address: [13, 11, 10, 2], Content: ßßßßß, Address: [13, 12, 2, 2], Content: ßßßßß, Address: [13, 12, 6, 2], Content: ßßßßß, Address: [13, 13, 0, 4], Content: ßßßßß, Address: [13, 14, 0, 0], Content: ßßßßß, Address: [13, 15, 6, 4], Content: ßßßßß, Address: [13, 15, 7, 0], Content: ßßßßß, Address: [13, 18, 7, 1], Content: ßßßßß, Address: [13, 19, 0, 4], Content: ßßßßß, Address: [13, 19, 9, 0], Content: ßßßßß, Address: [13, 19, 11, 3], Content: ßßßßß, Address: [14, 1, 1, 2], Content: ßßßßß, Address: [14, 1, 2, 4], Content: ßßßßß, Address: [14, 1, 9, 0], Content: ßßßßß, Address: [14, 1, 18, 3], Content: ßßßßß, Address: [14, 3, 19, 0], Content: ßßßßß, Address: [14, 4, 8, 0], Content: ßßßßß, Address: [14, 5, 4, 3], Content: ßßßßß, Address: [14, 5, 6, 0], Content: ßßßßß, Address: [14, 6, 17, 2], Content: ßßßßß, Address: [14, 6, 17, 4], Content: ßßßßß, Address: [14, 7, 5, 2], Content: ßßßßß, Address: [14, 7, 14, 2], Content: ßßßßß, Address: [14, 11, 19, 4], Content: ßßßßß, Address: [14, 12, 4, 4], Content: ßßßßß, Address: [14, 14, 4, 2], Content: ßßßßß, Address: [14, 15, 16, 2], Content: ßßßßß, Address: [14, 15, 17, 4], Content: ßßßßß, Address: [14, 16, 1, 0], Content: ßßßßß, Address: [14, 16, 2, 2], Content: ßßßßß, Address: [14, 17, 17, 1], Content: ßßßßß, Address: [14, 19, 10, 1], Content: ßßßßß, Address: [15, 2, 16, 0], Content: ßßßßß, Address: [15, 3, 16, 0], Content: ßßßßß, Address: [15, 4, 3, 1], Content: ßßßßß, Address: [15, 5, 6, 1], Content: ßßßßß, Address: [15, 8, 19, 2], Content: ßßßßß, Address: [15, 10, 5, 4], Content: ßßßßß, Address: [15, 11, 5, 3], Content: ßßßßß, Address: [15, 13, 8, 2], Content: ßßßßß, Address: [15, 14, 0, 0], Content: ßßßßß, Address: [15, 14, 1, 3], Content: ßßßßß, Address: [15, 14, 17, 2], Content: ßßßßß, Address: [15, 15, 6, 2], Content: ßßßßß, Address: [15, 17, 10, 2], Content: ßßßßß, Address: [15, 17, 13, 0], Content: ßßßßß, Address: [15, 17, 15, 0], Content: ßßßßß, Address: [15, 18, 8, 0], Content: ßßßßß, Address: [16, 1, 0, 3], Content: ßßßßß, Address: [16, 1, 9, 2], Content: ßßßßß, Address: [16, 3, 0, 3], Content: ßßßßß, Address: [16, 4, 0, 0], Content: ßßßßß, Address: [16, 5, 6, 4], Content: ßßßßß, Address: [16, 6, 1, 1], Content: ßßßßß, Address: [16, 6, 10, 1], Content: ßßßßß, Address: [16, 6, 15, 0], Content: ßßßßß, Address: [16, 7, 17, 4], Content: ßßßßß, Address: [16, 8, 2, 0], Content: ßßßßß, Address: [16, 8, 15, 3], Content: ßßßßß, Address: [16, 13, 4, 2], Content: ßßßßß, Address: [16, 13, 19, 4], Content: ßßßßß, Address: [16, 14, 9, 1], Content: ßßßßß, Address: [16, 15, 1, 0], Content: ßßßßß, Address: [16, 16, 0, 3], Content: ßßßßß, Address: [16, 16, 1, 1], Content: ßßßßß, Address: [16, 16, 2, 3], Content: ßßßßß, Address: [16, 16, 11, 2], Content: ßßßßß, Address: [16, 17, 1, 2], Content: ßßßßß, Address: [16, 17, 2, 0], Content: ßßßßß, Address: [16, 17, 6, 2], Content: ßßßßß, Address: [16, 18, 5, 2], Content: ßßßßß, Address: [16, 18, 6, 3], Content: ßßßßß, Address: [16, 19, 12, 4], Content: ßßßßß, Address: [17, 2, 17, 1], Content: ßßßßß, Address: [17, 4, 1, 0], Content: ßßßßß, Address: [17, 4, 17, 2], Content: ßßßßß, Address: [17, 5, 10, 3], Content: ßßßßß, Address: [17, 6, 2, 1], Content: ßßßßß, Address: [17, 6, 10, 2], Content: ßßßßß, Address: [17, 6, 13, 4], Content: ßßßßß, Address: [17, 8, 7, 4], Content: ßßßßß, Address: [17, 9, 3, 4], Content: ßßßßß, Address: [17, 12, 5, 3], Content: ßßßßß, Address: [17, 13, 18, 2], Content: ßßßßß, Address: [17, 15, 7, 2], Content: ßßßßß, Address: [17, 16, 7, 3], Content: ßßßßß, Address: [18, 2, 0, 2], Content: ßßßßß, Address: [18, 2, 12, 3], Content: ßßßßß, Address: [18, 2, 18, 1], Content: ßßßßß, Address: [18, 3, 1, 2], Content: ßßßßß, Address: [18, 3, 2, 2], Content: ßßßßß, Address: [18, 3, 12, 3], Content: ßßßßß, Address: [18, 5, 4, 3], Content: ßßßßß, Address: [18, 6, 4, 1], Content: ßßßßß, Address: [18, 7, 12, 4], Content: ßßßßß, Address: [18, 7, 13, 2], Content: ßßßßß, Address: [18, 7, 19, 3], Content: ßßßßß, Address: [18, 8, 0, 2], Content: ßßßßß, Address: [18, 8, 13, 1], Content: ßßßßß, Address: [18, 11, 18, 2], Content: ßßßßß, Address: [18, 13, 3, 4], Content: ßßßßß, Address: [18, 13, 18, 4], Content: ßßßßß, Address: [18, 16, 14, 4], Content: ßßßßß, Address: [18, 17, 7, 2], Content: ßßßßß, Address: [18, 19, 2, 2], Content: ßßßßß, Address: [18, 19, 4, 4], Content: ßßßßß, Address: [19, 0, 17, 2], Content: ßßßßß, Address: [19, 1, 7, 3], Content: ßßßßß, Address: [19, 1, 16, 1], Content: ßßßßß, Address: [19, 2, 19, 1], Content: ßßßßß, Address: [19, 3, 3, 4], Content: ßßßßß, Address: [19, 3, 9, 2], Content: ßßßßß, Address: [19, 5, 8, 2], Content: ßßßßß, Address: [19, 5, 11, 4], Content: ßßßßß, Address: [19, 5, 12, 1], Content: ßßßßß, Address: [19, 6, 6, 0], Content: ßßßßß, Address: [19, 6, 15, 0], Content: ßßßßß, Address: [19, 8, 7, 1], Content: ßßßßß, Address: [19, 9, 3, 4], Content: ßßßßß, Address: [19, 10, 17, 0], Content: ßßßßß, Address: [19, 12, 8, 3], Content: ßßßßß, Address: [19, 16, 14, 4], Content: ßßßßß, Address: [19, 17, 0, 2], Content: ßßßßß, Address: [19, 17, 1, 4], Content: ßßßßß, Address: [19, 17, 18, 3], Content: ßßßßß, Address: [19, 19, 1, 3], Content: ßßßßß, Address: [19, 19, 11, 4], Content: ßßßßß]

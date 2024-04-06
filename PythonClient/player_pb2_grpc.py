@@ -25,6 +25,11 @@ class PlayerHostStub(object):
                 request_serializer=player__pb2.SubsribeRequest.SerializeToString,
                 response_deserializer=player__pb2.GameUpdateMessage.FromString,
                 )
+        self.GetGameState = channel.unary_unary(
+                '/PlayerInterface.PlayerHost/GetGameState',
+                request_serializer=player__pb2.EmptyRequest.SerializeToString,
+                response_deserializer=player__pb2.GameStateMessage.FromString,
+                )
         self.MakeMove = channel.unary_unary(
                 '/PlayerInterface.PlayerHost/MakeMove',
                 request_serializer=player__pb2.Move.SerializeToString,
@@ -53,6 +58,12 @@ class PlayerHostServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def Subscribe(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
+    def GetGameState(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -88,6 +99,11 @@ def add_PlayerHostServicer_to_server(servicer, server):
                     servicer.Subscribe,
                     request_deserializer=player__pb2.SubsribeRequest.FromString,
                     response_serializer=player__pb2.GameUpdateMessage.SerializeToString,
+            ),
+            'GetGameState': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetGameState,
+                    request_deserializer=player__pb2.EmptyRequest.FromString,
+                    response_serializer=player__pb2.GameStateMessage.SerializeToString,
             ),
             'MakeMove': grpc.unary_unary_rpc_method_handler(
                     servicer.MakeMove,
@@ -146,6 +162,23 @@ class PlayerHost(object):
         return grpc.experimental.unary_stream(request, target, '/PlayerInterface.PlayerHost/Subscribe',
             player__pb2.SubsribeRequest.SerializeToString,
             player__pb2.GameUpdateMessage.FromString,
+            options, channel_credentials,
+            insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
+
+    @staticmethod
+    def GetGameState(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(request, target, '/PlayerInterface.PlayerHost/GetGameState',
+            player__pb2.EmptyRequest.SerializeToString,
+            player__pb2.GameStateMessage.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 
