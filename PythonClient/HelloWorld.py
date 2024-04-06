@@ -58,10 +58,12 @@ class Snake:
     Length = 1
     Name = ""
     KidCount = 0
+    JustCreated = True
 
     def __init__(self, address, name, justCreated = True):
         print("creating new snake: " + name);
         self.Head = address
+        self.Segments = []
         self.Segments.append(address)
         self.Name = name
         self.JustCreated = justCreated
@@ -148,13 +150,24 @@ class GameState:
             if cell.HasPlayer:
                 self.FoodCells.removeCell(address=updatedCell.address)
 
+        print("")
+        print("Removed snakes:")
+        print(gameUpdate.removedSnakes)
         for removedSnake in gameUpdate.removedSnakes:
-            print("Removed snake: " + removedSnake[0] + " " + removedSnake[1])
-            for snake in self.Snakes:
-                if removedSnake[0] == snake.Name:
-                    self.Snakes.remove(snake)
-                elif removedSnake[1] == snake.Name:
-                    self.Snakes.remove(snake)
+            # Removed due to saving or illegal move
+            if(len(removedSnake) == 1):
+                print("Removed snake 1: " + removedSnake)
+
+            # Removed due to collision
+            if(len(removedSnake) == 2):
+                print(f"Removed snake 1: {removedSnake[0]}")
+                print (f"Removed snake 2: {removedSnake[1]}")
+                if(removedSnake[0].split(':')[0] == myName or removedSnake[1].split(':')[0] == myName):
+                    for snake in self.Snakes:
+                        if snake.Name == removedSnake[0].split(':')[1]:
+                            self.Snakes.remove(snake)
+                        elif snake.Name == removedSnake[1].split(':')[1]:
+                            self.Snakes.remove(snake)
 
     def getNextAddressRandom(self, address):
         while True:
@@ -212,39 +225,45 @@ class GameState:
                 snake.Length += 1
             else:
                 snake.Segments = snake.Segments[1:]
+            
             moves.append(player_pb2.Move(playerIdentifier=playerIdentifier, snakeName=snake.Name, nextLocation=nextLocation))
+        
         return moves
     
     def getSplits(self):
         splits = []
         for snake in self.Snakes:
             if snake.Length > 1 and len(self.Snakes) < 11:
-                print("old snake:")
+                print("Old snake (head last entry):")
                 for segment in snake.Segments:
                     print(segment)
                 print(" ")
+
                 snake.Length -= 1
                 snake.KidCount += 1
                 newHead = snake.Segments[0]
-                print("new head:")
+                print("New head:")
                 print(newHead)
                 snake.Segments = snake.Segments[1:]
-                print("new head:")
-                print(newHead)
+
                 global numberOfBerserkers
                 numberOfBerserkers += 1
-                newSnake = Snake(address=newHead, name=f"{berserkerBaseName}-{numberOfBerserkers}") 
+                newSnake = Snake(address=newHead, name=f"{berserkerBaseName}-{numberOfBerserkers}")
+
                 self.Snakes.append(newSnake)
                 address = self.getNextAddressTarget(newHead, self.PlayerCells)
                 newSnake.Head = address
-                print("new head:")
+
+                print("New target for new head:")
                 print(newSnake.Head)
+
                 cell = self.getCell(address=address)
                 newSnake.Segments.append(address)
                 if cell.HasFood:
                     newSnake.Length += 1
                 else:
                     newSnake.Segments = newSnake.Segments[1:]
+                
                 splits.append(player_pb2.SplitRequest(playerIdentifier=playerIdentifier, newSnakeName=newSnake.Name, oldSnakeName=snake.Name, snakeSegment=1, nextLocation=address))
         return splits
 
@@ -306,28 +325,30 @@ async def Subscribe(gameState) -> None:
                     stub.MakeMove(move)
 
                 # loop over other player snakes and log them
-                print("")
-                print("Other Players:")
-                for cell in gameState.PlayerCells.Cells:
-                    print(f"{cell.Content} found at {cell.Address}")
-                print(" ")
+                # print("")
+                # print("Other Players:")
+                # for cell in gameState.PlayerCells.Cells:
+                #     print(f"{cell.Content} found at {cell.Address}")
+                # print(" ")
 
                 if (len(gameState.Snakes) == 0):
                     print("Game over")
                     print("")
 
+                print("---------------------------")
+
 async def main():
     #asyncio.create_task(ListenToServerEvents())
     allCells = GetAllCells()
     gameState = Register(f"{myName}", allCells)
-    print("")
-    print("Food Cells:")
-    print(gameState.FoodCells.Type)
-    print(gameState.FoodCells.Cells)
-    print("")
-    print("Player Cells:")
-    print(gameState.PlayerCells.Type)
-    print(gameState.PlayerCells.Cells)
+    # print("")
+    # print("Food Cells:")
+    # print(gameState.FoodCells.Type)
+    # print(gameState.FoodCells.Cells)
+    # print("")
+    #print("Player Cells:")
+    #print(gameState.PlayerCells.Type)
+    #print(gameState.PlayerCells.Cells)
 
     asyncio.create_task(Subscribe(gameState))
 
