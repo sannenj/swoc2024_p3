@@ -59,11 +59,12 @@ class Snake:
     Name = ""
     KidCount = 0
 
-    def __init__(self, address, name):
+    def __init__(self, address, name, justCreated = True):
         print("creating new snake: " + name);
         self.Head = address
         self.Segments.append(address)
         self.Name = name
+        self.JustCreated = justCreated
         print("snake is created: " + name);
 
 class Cell:
@@ -124,6 +125,12 @@ class GameState:
             cell.HasPlayer = False
             self.Cells[tuple(address)] = cell
         return cell
+    
+    def diff(self, a, b):
+        return np.array(a) - np.array(b)
+    
+    def dist(self, a, b):
+        return np.linalg.norm(self.diff(a, b))
 
     def update(self, gameUpdate):
         for updatedCell in gameUpdate.updatedCells:
@@ -141,6 +148,14 @@ class GameState:
             if cell.HasPlayer:
                 self.FoodCells.removeCell(address=updatedCell.address)
 
+        for removedSnake in gameUpdate.removedSnakes:
+            print("Removed snake: " + removedSnake[0] + " " + removedSnake[1])
+            for snake in self.Snakes:
+                if removedSnake[0] == snake.Name:
+                    self.Snakes.remove(snake)
+                elif removedSnake[1] == snake.Name:
+                    self.Snakes.remove(snake)
+
     def getNextAddressRandom(self, address):
         while True:
             newaddr = np.copy(address)
@@ -155,13 +170,13 @@ class GameState:
                 if cell.HasPlayer == False:
                     return newaddr
     
-    def getNextAddressKamikazeMode(self, address):
-        sortedCells = sorted(self.PlayerCells.Cells, key=lambda x: np.linalg.norm(np.array(x.Address) - np.array(address)))
+    def getNextAddressTarget(self, address, targetList: OccupiedCells):
+        sortedCells = sorted(targetList.Cells, key=lambda x: self.dist(x.Address, address))
 
-        closestPlayer = sortedCells[0]
+        closestTarget = sortedCells[0]
 
-        # find direction to move to get closer to the closest player
-        diff = np.array(closestPlayer.Address) - np.array(address)
+        # find direction to move to get closer to the closest target
+        diff = self.diff(closestTarget.Address, address)
         # pick one random direction to move in
         dim = -1
         for i in range(len(diff)):
@@ -179,11 +194,15 @@ class GameState:
     def getMoves(self):
         moves = []
         for snake in self.Snakes:
+            # Skip computing moves for the snake that was just created as each split will force a move
+            if (snake.JustCreated):
+                snake.JustCreated = False
+                continue
+
             if (snake.Name is not myName and len(self.PlayerCells.Cells) > 1):
-                nextLocation = self.getNextAddressKamikazeMode(snake.Head)
+                nextLocation = self.getNextAddressTarget(snake.Head, self.PlayerCells)
             if (snake.Name is myName and len(self.FoodCells.Cells) > 1):
-                # TODO: Implement food seeking mode
-                nextLocation = self.getNextAddressRandom(snake.Head)
+                nextLocation = self.getNextAddressTarget(snake.Head, self.FoodCells)
             else:
                 nextLocation = self.getNextAddressRandom(snake.Head)
             snake.Head = nextLocation
@@ -216,7 +235,7 @@ class GameState:
                 numberOfBerserkers += 1
                 newSnake = Snake(address=newHead, name=f"{berserkerBaseName}-{numberOfBerserkers}") 
                 self.Snakes.append(newSnake)
-                address = self.getNextAddressKamikazeMode(newHead)
+                address = self.getNextAddressTarget(newHead, self.PlayerCells)
                 newSnake.Head = address
                 print("new head:")
                 print(newSnake.Head)
@@ -271,18 +290,24 @@ async def Subscribe(gameState) -> None:
         with grpc.insecure_channel("192.168.178.62:5168") as channel:
             stub = player_pb2_grpc.PlayerHostStub(channel)
             subscribeResponse = stub.Subscribe(player_pb2.SubsribeRequest(playerIdentifier=playerIdentifier))
-            #print("Subscribe response:")
-            #print(subscribeResponse)
+
             for thing in subscribeResponse:
+                # print("Subscribe update:")
+                # print(thing)
+
                 gameState.update(gameUpdate=thing)
                 for split in gameState.getSplits():
                     stub.SplitSnake(split)
+
+                print("")
+                print("Moves:")
                 for move in gameState.getMoves():
                     print(move.snakeName + ": " + str(move.nextLocation))
                     stub.MakeMove(move)
 
-                # loop over snakes and log them
-                print("Occupied:")
+                # loop over other player snakes and log them
+                print("")
+                print("Other Players:")
                 for cell in gameState.PlayerCells.Cells:
                     print(f"{cell.Content} found at {cell.Address}")
                 print(" ")
@@ -294,7 +319,6 @@ async def Subscribe(gameState) -> None:
 async def main():
     #asyncio.create_task(ListenToServerEvents())
     allCells = GetAllCells()
-    global numberOfBerserkers
     gameState = Register(f"{myName}", allCells)
     print("")
     print("Food Cells:")
