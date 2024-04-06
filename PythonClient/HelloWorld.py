@@ -203,6 +203,14 @@ class GameState:
             newAddress[dim] -= 1
 
         return newAddress
+    
+    def iOccupyTarget(self, target):
+        for snake in self.Snakes:
+            for segment in snake.Segments:
+                # Found a target that I contain
+                if all(x == 0 for x in self.diff(segment, target)):
+                    return True
+        return False
 
     def getMoves(self):
         moves = []
@@ -218,6 +226,12 @@ class GameState:
                 nextLocation = self.getNextAddressTarget(snake.Head, self.FoodCells)
             else:
                 nextLocation = self.getNextAddressRandom(snake.Head)
+
+            if(self.iOccupyTarget(nextLocation)):
+                print("")
+                print(f"I occupy target: {nextLocation}")
+                continue
+
             snake.Head = nextLocation
             cell = self.getCell(nextLocation)
             snake.Segments.append(nextLocation)
@@ -225,7 +239,7 @@ class GameState:
                 snake.Length += 1
             else:
                 snake.Segments = snake.Segments[1:]
-            
+
             moves.append(player_pb2.Move(playerIdentifier=playerIdentifier, snakeName=snake.Name, nextLocation=nextLocation))
         
         return moves
@@ -233,7 +247,8 @@ class GameState:
     def getSplits(self):
         splits = []
         for snake in self.Snakes:
-            if snake.Length > 1 and len(self.Snakes) < 11:
+            # Maybe keep the threshold present so that the mother ship can score some points
+            if snake.Length > 1: # and len(self.Snakes) < 11
                 print("Old snake (head last entry):")
                 for segment in snake.Segments:
                     print(segment)
