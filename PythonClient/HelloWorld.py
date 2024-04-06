@@ -9,6 +9,7 @@ myName = "Kølin"
 berserkerBaseName ="Bersærker"
 numberOfBerserkers = 0
 foodPlaceholder = "ßßßßß"
+mothershipName = myName
 
 class OccupiedCells:
     Cells = []
@@ -59,6 +60,7 @@ class Snake:
     Name = ""
     KidCount = 0
     JustCreated = True
+    OccupyTargetCount = 0
 
     def __init__(self, address, name, justCreated = True):
         print("creating new snake: " + name);
@@ -151,23 +153,36 @@ class GameState:
                 self.FoodCells.removeCell(address=updatedCell.address)
 
         print("")
-        print("Removed snakes:")
+        print("Removed snakes update:")
         print(gameUpdate.removedSnakes)
+        toBeRemoved = []
         for removedSnake in gameUpdate.removedSnakes:
             # Removed due to saving or illegal move
             if(len(removedSnake) == 1):
                 print("Removed snake 1: " + removedSnake)
+                toBeRemoved.append(removedSnake.split(':')[1])
 
             # Removed due to collision
             if(len(removedSnake) == 2):
                 print(f"Removed snake 1: {removedSnake[0]}")
-                print (f"Removed snake 2: {removedSnake[1]}")
+                print(f"Removed snake 2: {removedSnake[1]}")
                 if(removedSnake[0].split(':')[0] == myName or removedSnake[1].split(':')[0] == myName):
                     for snake in self.Snakes:
                         if snake.Name == removedSnake[0].split(':')[1]:
-                            self.Snakes.remove(snake)
+                            toBeRemoved.append(removedSnake[0].split(':')[1])
                         elif snake.Name == removedSnake[1].split(':')[1]:
-                            self.Snakes.remove(snake)
+                            toBeRemoved.append(removedSnake[1].split(':')[1])
+
+        for snake in self.Snakes:
+            if(snake.Name in toBeRemoved):
+                print(f"Remove: {snake.Name}")
+                self.Snakes.remove(snake)
+
+                global mothershipName
+                if(snake.Name == mothershipName):
+                    print("")
+                    print("New Mothership selected")
+                    mothershipName = self.Snakes[0].Name
 
     def getNextAddressRandom(self, address):
         while True:
@@ -227,9 +242,13 @@ class GameState:
             else:
                 nextLocation = self.getNextAddressRandom(snake.Head)
 
+            if(snake.OccupyTargetCount > 5):
+                snake.OccupyTargetCount = 0
+                nextLocation = self.getNextAddressRandom(snake.Head)
+
             if(self.iOccupyTarget(nextLocation)):
-                print("")
-                print(f"I occupy target: {nextLocation}")
+                snake.OccupyTargetCount += 1
+                print(f"{snake.Name} occupy target: {nextLocation} with count: {snake.OccupyTargetCount}")
                 continue
 
             snake.Head = nextLocation
@@ -248,7 +267,7 @@ class GameState:
         splits = []
         for snake in self.Snakes:
             # Maybe keep the threshold present so that the mother ship can score some points
-            if snake.Length > 1: # and len(self.Snakes) < 11
+            if snake.Length > 1 and len(self.Snakes) < 24:
                 print("Old snake (head last entry):")
                 for segment in snake.Segments:
                     print(segment)
@@ -334,6 +353,9 @@ async def Subscribe(gameState) -> None:
                     stub.SplitSnake(split)
 
                 print("")
+                print(f"Mother ship: {mothershipName}")
+
+                print("")
                 print("Moves:")
                 for move in gameState.getMoves():
                     print(move.snakeName + ": " + str(move.nextLocation))
@@ -368,5 +390,13 @@ async def main():
     asyncio.create_task(Subscribe(gameState))
 
 if __name__ == "__main__":
+    #while True:
+     #   try:
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
+       # except Exception as e:
+            # print("Error:")
+            # print(e)
+            # print(" ")
+            # print("Stack trace:")
+            # print(e)
