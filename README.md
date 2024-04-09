@@ -7,3 +7,7 @@ Basic strategy is to have one snake, aka the mother ship, to scavenge for food a
 ## Running the client
 
 From the `PythonClient` folder run the following command `python HelloWorld.py` or run `python HelloWorld.py > run.log` if you want to capture the logs in a file.
+
+## Server Code
+
+The server code can be found [in this repo](https://github.com/matthijsman/Swoc2024).
