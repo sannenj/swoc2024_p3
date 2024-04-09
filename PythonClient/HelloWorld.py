@@ -159,8 +159,8 @@ class GameState:
         for removedSnake in gameUpdate.removedSnakes:
             playerName = removedSnake.split(':')[0]
             snakeName = removedSnake.split(':')[1]
-            if(playerName == myName):
-                toBeRemoved.append(snakeName)
+            #if(playerName == myName):
+                #toBeRemoved.append(snakeName)
         # for removedSnake in gameUpdate.removedSnakes:
         #     # Removed due to saving or illegal move
         #     if(len(removedSnake) == 1):
@@ -275,7 +275,7 @@ class GameState:
         splits = []
         for snake in self.Snakes:
             # Maybe keep the threshold present so that the mother ship can score some points
-            if snake.Length > 1 and len(self.Snakes) < 24:
+            if snake.Length > 1 and len(self.Snakes) < 42:
                 print("Old snake (head last entry):")
                 for segment in snake.Segments:
                     print(segment)
