@@ -10,6 +10,7 @@ berserkerBaseName ="Bersærker"
 numberOfBerserkers = 0
 foodPlaceholder = "ßßßßß"
 mothershipName = myName
+server = "localhost:5168"
 
 class OccupiedCells:
     Cells = []
@@ -310,13 +311,13 @@ class GameState:
         return splits
 
 async def ListenToServerEvents() -> None:
-        with grpc.insecure_channel("192.168.178.62:5168") as channel:
+        with grpc.insecure_channel(server) as channel:
             stub = player_pb2_grpc.PlayerHostStub(channel)
             for thing in stub.SubscribeToServerEvents(player_pb2.EmptyRequest()):
                 print(thing)
 
 def Register(playerName, allCells):
-    with grpc.insecure_channel("192.168.178.62:5168") as channel:
+    with grpc.insecure_channel(server) as channel:
         stub = player_pb2_grpc.PlayerHostStub(channel)
         registerResponse = stub.Register(player_pb2.RegisterRequest(playerName=playerName))
 
@@ -331,7 +332,7 @@ def Register(playerName, allCells):
         return gameState
     
 def GetAllCells():
-    with grpc.insecure_channel("192.168.178.62:5168") as channel:
+    with grpc.insecure_channel(server) as channel:
         stub = player_pb2_grpc.PlayerHostStub(channel)
         gameStateResponse = stub.GetGameState(player_pb2.EmptyRequest())
 
@@ -348,7 +349,7 @@ def GetAllCells():
         return updatedCells
 
 async def Subscribe(gameState) -> None:
-        with grpc.insecure_channel("192.168.178.62:5168") as channel:
+        with grpc.insecure_channel(server) as channel:
             stub = player_pb2_grpc.PlayerHostStub(channel)
             subscribeResponse = stub.Subscribe(player_pb2.SubsribeRequest(playerIdentifier=playerIdentifier))
 
